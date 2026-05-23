@@ -1,10 +1,12 @@
 /* IMG_Hero */
 #IMG_Hero {
-width: 1440px;
+width: 100%;
 height: 631px;
 left: 0px;
 top: 0px;
-
+background-position: center;
+background-size: cover !important;
+background-repeat: no-repeat !important;
 background:  url('../assets/IMG_Hero.png');
 
 }
@@ -147,20 +149,18 @@ color: #FFFFFF;
 #BACKGROUND_BlueGradient {
 
     background: url('../assets/BACKGROUND_BlueGradient.png');
+   
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 609px;
-    left: calc(50% - 1440px/2);
     top: 541px;
 }
 /* SPACING */
 /* What We Do */
 .Header2Font{
-position: absolute;
-width: 309px;
-height: 53px;
-left: 115px;
-top: 106px;
+position: relative;
 
 font-family: 'Industry Inc';
 font-style: normal;
@@ -176,11 +176,10 @@ color: #FFFFFF;
 
 /* We design and manufacture precision aerospace components built to perform under the most demanding conditions. From early-stage development through full-scale production, our team ensures every detail is engineered for accuracy, consistency, and long-term performance. We work with advanced materials and modern manufacturing processes to meet strict industry requirements and evolving technical challenges. Our capabilities span a wide range of aerospace applications, allowing us to support both specialized projects and large-scale production needs. We prioritize tight tolerances, efficient workflows, and repeatable results to maintain the highest level of reliability across every order. Every project is approached with a focus on quality, accountability, and clear communication. Our team collaborates closely with partners to ensure specifications are met and expectations are exceeded at every stage. The result is a streamlined process that delivers components you can trust, on time and to standard. */
 .WhatWeDoFont{
-position: absolute;
+position: relative;
 width: 565px;
-height: 321px;
-left: 120px;
-top: 702px;
+/*left: 120px;
+top: 702px;*/
 
 font-family: 'Roboto';
 font-style: normal;
@@ -193,14 +192,4 @@ color: #FFFFFF;
 
 }
 
-/* Ellipse 2 */
-#mainPicture1
-{
-position: absolute;
-width: 233px;
-height: 233px;
-left: 53%;
-top: 16%;
 
-background: url('../assets/technical_drawing.png');
-}
