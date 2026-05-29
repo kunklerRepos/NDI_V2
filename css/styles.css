@@ -1,13 +1,16 @@
 /* IMG_Hero */
 #IMG_Hero {
 width: 100%;
-height: 631px;
+height: 1000px;
+margin-top: -15% !important;
+position: relative;     
 left: 0px;
 top: 0px;
+margin-top: 3%;
 background-position: center;
 background-size: cover !important;
 background-repeat: no-repeat !important;
-background:  url('../assets/IMG_Hero.png');
+background:  url('../assets/HOME_HERO.jpg');
 
 }
 
@@ -126,52 +129,64 @@ background: #1E3A5F;
 .MainHeaderFont
 {
 position: absolute;
-width: 830px;
+width: 35%;
 height: 100px;
-left: calc(50% - 830px/2);
-top: 279px;
-
+/*left: calc(50% - 830px/2);*/
+top: 46%;
+left: 12%;
 font-family: 'Industry Inc';
 font-style: normal;
 font-weight: 700;
 font-size: 50px;
 line-height: 50px;
 /* or 100% */
-text-align: center;
+text-align: start;
 letter-spacing: -0.05em;
 
 color: #FFFFFF;
 
 }
 
+.subHeadingFont
+{
+    font-family: 'Industry Inc';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    position: relative; 
+    top: 60%;
+    left: 12%;
+    color: white;
+}
+
 
 /* BACKGROUND_BlueGradient */
 #BACKGROUND_BlueGradient {
 
-    background: url('../assets/BACKGROUND_BlueGradient.png');
+    background: url('../assets/HeroBaseOverlay.png');
    
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 609px;
-    top: 541px;
+    height: 100px;
+    margin-top: -6%;
 }
 /* SPACING */
 /* What We Do */
 .Header2Font{
-position: relative;
+    position: relative;
+    font-family: 'Industry Inc';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    /* identical to box height */
+    text-align: center;
 
-font-family: 'Industry Inc';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 53px;
-/* identical to box height */
-text-align: center;
-
-/* White */
-color: #FFFFFF;
+    /* White */
+    color: #FFFFFF;
 }
 
 /* We design and manufacture precision aerospace components built to perform under the most demanding conditions. From early-stage development through full-scale production, our team ensures every detail is engineered for accuracy, consistency, and long-term performance. We work with advanced materials and modern manufacturing processes to meet strict industry requirements and evolving technical challenges. Our capabilities span a wide range of aerospace applications, allowing us to support both specialized projects and large-scale production needs. We prioritize tight tolerances, efficient workflows, and repeatable results to maintain the highest level of reliability across every order. Every project is approached with a focus on quality, accountability, and clear communication. Our team collaborates closely with partners to ensure specifications are met and expectations are exceeded at every stage. The result is a streamlined process that delivers components you can trust, on time and to standard. */
@@ -180,7 +195,9 @@ position: relative;
 width: 565px;
 /*left: 120px;
 top: 702px;*/
-
+display: grid;
+justify-self: center;
+margin-bottom: 3%;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
