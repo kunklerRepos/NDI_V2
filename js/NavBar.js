@@ -7,11 +7,14 @@ const GenerateNavBar = () =>
     let nav = document.createElement("nav");
     nav.id="NavBar";
     nav.className = "navbar navbar-expand-lg navbar-light bg-light";
-    nav.style = "background-color: #FFFFFF !important;";
+    nav.style = "background-color: #FFFFFF !important; z-index: 1 !important;";
 
     nav.innerHTML = `
         <div class="container-fluid">
-    <a class="navbar-brand" id="HOMELink" href="#">Navbar</a>
+    <a class="navbar-brand" id="HOMELink" href="#">
+      <div id="HOMELinkICON" style="width: 120px; height: 75px;
+      background-image: url('../assets/NDI_PrimaryColor_1k.png'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

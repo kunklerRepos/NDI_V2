@@ -2,20 +2,21 @@ function ServicesPage()
 {
     const servicesPage = document.getElementById("root");
     servicesPage.innerHTML = `
-        				<div id="ServicesSectionHeader" style="width: 100%; height: 370px; background-color: #0F1720; display: grid; justify-content: center;	align-items: center;">
-					<div style="display: flex; align-items: center; justify-content: center; margin-top: 20%;">
-						<h1 style="font-family: Roboto; color: white;">SERVICES</h1>
+        				<div id="ServicesSectionHeader" style="width: 100%; height: 500px; display: grid; justify-content: center;	align-items: center;
+						background-image: linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)), url('../assets/SERVICES_HERO.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top;">
+					<div style="display: flex; align-items: center; justify-content: center; margin-top: -7%;">
+						<h1 style="font-family: 'Industry Inc'; color: white;">SERVICES</h1>
 					</div>
-					<div style="display: flex; align-items: center; justify-content: center; margin-top: -20%;">
+					<div style="display: flex; align-items: center; justify-content: center; margin-top: -65%;">
 						<p style="font-family: Roboto; color: white;">
 							Integrated engineering, testing, manufacturing, and repair solutions for aerospace applications.
 						</p>
 					</div>	
 				</div>
 
-				<div id="ServicesOverviewSection" style="width: 100%; height: 199px">
+				<div id="ServicesOverviewSection" style="width: 100%; height: 199px; background-image: url('../assets/BACKGROUND_ServicesOverview.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: flex; align-items: center; justify-content: center; padding: 1%;">
-						<h3 style="font-family: Roboto; color: black;">
+						<h3 style="font-family: 'Industry Inc'; color: black;">
 							SERVICES OVERVIEW
 						</h3>
 					</div>
@@ -34,12 +35,14 @@ function ServicesPage()
 							NDI combines over 40 years of design and analysis expertise with advanced CAD and CAE tools to develop innovative, high-performance aerospace and defense components. Our engineering process focuses on precision, functionality, and reliability, ensuring each solution meets the specific requirements of its application. Through a combination of technical experience and modern design capabilities, we deliver solutions that are both efficient and dependable.
 						</p>
 					</div>
-					<div id="EngDesignPhotos" style="width: 50%; height: 100%; background-color: #2A3D52;"></div>
+					<div id="EngDesignPhotos" style="width: 50%; height: 100%;
+					 background-image: url('../assets/EngineeringSection.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 				</div>
 
-				<div id="ProductDevTestingSec" style="width: 100%; height: 462px; background-color: white;">
+				<div id="ProductDevTestingSec" style="width: 100%; height: 462px; 
+				background-image: url('../assets/BACKGROUND_ProdDevTesting.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: flex; align-items: center; justify-content: center;">
-						<h2 style="color: black; font-family: Roboto; font-weight: 400;">
+						<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400; margin-top: 2%;">
 							PRODUCT DEVELOPMENT TESTING
 						</h2>
 					</div>
@@ -160,9 +163,9 @@ function ServicesPage()
 					</div>
 					</div>
 				</div>
-				<div id="ProductManufacturingSection" style="width: 100%; height: 330px; background-color: #0F1720;">
+				<div id="ProductManufacturingSection" style="width: 100%; height: 330px; background-image: url('../assets/BACKGROUND_ProductionManufacturing.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: flex; align-items: center; justify-content: center;">
-						<h2 style="color: white; font-family: Roboto; font-weight: 400; margin-top: 5%;">
+						<h2 style="color: white; font-family: 'Industry Inc'; font-weight: 400; margin-top: 5%;">
 							PRODUCT & MANUFACTURING
 						</h2>
 					</div>
@@ -175,7 +178,7 @@ Our operations are supported by a state-of-the-art MRP system that manages sched
 					</div>
 				</div>
 				<div id="qualityPics" style="width: 100%; height: 445px; display: flex;">
-					<div style="width: 50%; height: 100%; background-color: #2A3D52;"></div>
+					<div style="width: 50%; height: 100%; background-image: url('../assets/QualitySection.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 					<div style="width: 50%; height: 100%; background-color: #0F1720;">
 						<div style="display: flex; align-items: center; justify-content: center; height: 50%;">
 							<h2 style="color: white; font-family: Roboto; font-weight: 400; margin-left: 61%;">
@@ -194,12 +197,13 @@ Our operations are supported by a state-of-the-art MRP system that manages sched
 					</div>
 					</div>
 				</div>
-				<div id="RepairServicesSect" style="width: 100%; height: 372px;">
+				<div id="RepairServicesSect" style="width: 100%; height: 372px; background-image: url('../assets/BACKGROUND_Repair.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: flex; align-items: center; justify-content: center;">
-						<div id="FAARepairPlaceHolder" style="margin-top: 3%; background-color: #2A3D52; width: 150px; height: 150px;"></div>
+						<div id="FAARepairPlaceHolder" style="margin-top: 3%; width: 150px; height: 150px;
+						background-image: url('../assets/Seal_of_the_United_States_Federal_Aviation_Administration.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 					</div>
 					<div style="display: flex; align-items: center; justify-content: center;">
-						<h2 style="color: black; font-family: Roboto; font-weight: 400;">
+						<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400;">
 							REPAIR SERVICES
 						</h2>
 					</div>
@@ -210,7 +214,8 @@ Our operations are supported by a state-of-the-art MRP system that manages sched
 					</div>
 				</div>
 
-				<div id="GetInTouchSection" style="width: 100%; height: 257px; background-color: beige">
+				<div id="GetInTouchSection" style="width: 100%; height: 257px; 
+				background-image: url('../assets/BACKGROUND_GetInTouch2.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: grid; justify-content: center; position: relative;">
 					<h2 style="font-family: Roboto; margin-top: 6%; color: black; display: grid; justify-content: center;">
 						GET IN TOUCH

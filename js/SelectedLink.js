@@ -20,6 +20,7 @@ const selectedLink = (elementId) =>
         case "HOMELink":
             MainPage();
             break;
+        
         case "PRODUCTSLink":
             ProductsPage();
             break;
@@ -31,6 +32,9 @@ const selectedLink = (elementId) =>
             break;
         case "CONTACTLink":
             ContactPage();
+            break;
+        default:
+            MainPage(); 
             break;
     }
 

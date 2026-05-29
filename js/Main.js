@@ -3,7 +3,7 @@ import GenerateFooter from "./Footer.js";
 import selectedLink from "./SelectedLink.js";
 import MainPage from "./MainPage.js";
 
-const linksArr = ["HOMELink", "PRODUCTSLink", "SERVICESLink", "ABOUT_USLink", "CONTACTLink"];
+const linksArr = ["HOMELink", "HOMELinkICON", "PRODUCTSLink", "SERVICESLink", "ABOUT_USLink", "CONTACTLink"];
 
 
 const navBar = GenerateNavBar();
