@@ -31,10 +31,10 @@ function AboutUsSection()
 					</div>
 				</div>
 				<div id="AboutUsPhoto2" style="width: 50%; height: 450px; 
-				background-image: url('../assets/WhoWeAre.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+				background-image: url('./assets/WhoWeAre.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 			</div>
 			<div id="MissionValuesSection" style="width: 100%; height: 558px; 
-			background-image: url('../assets/BACKGROUND_Timeline.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+			background-image: url('./assets/BACKGROUND_Timeline.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 				<div style="display: flex; align-items: center; justify-content: center;">
 					<h2 style="color: black; font-family: Roboto; font-weight: 400;">
 						MISSION AND VALUES
@@ -55,7 +55,7 @@ function AboutUsSection()
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
 									<div style="border-radius: 10%; height: 89.51px; width: 89.5px; 
-									background-image: url('../assets/ICON_Improvement.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+									background-image: url('./assets/ICON_Improvement.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 								</div>
 								<h5 class="card-title" style="display: grid; font-weight: 400; font-size: 22px; color: #3B82F6; justify-content: center; align-content: center;">IMPROVEMENT</h5>
 								<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 400; display: grid; justify-content: center; align-content: center;">
@@ -70,7 +70,7 @@ function AboutUsSection()
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
 									<div style="border-radius: 10%; height: 89.51px; width: 89.5px; 
-									background-image: url('../assets/ICON_Reliability.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+									background-image: url('./assets/ICON_Reliability.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 								</div>
 								<h5 class="card-title" style="display: grid; font-weight: 400; font-size: 22px; color: #3B82F6; justify-content: center; align-content: center;">RELIABILITY</h5>
 								<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 400; display: grid; justify-content: center; align-content: center;">
@@ -85,7 +85,7 @@ function AboutUsSection()
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
 									<div style="border-radius: 10%; height: 89.51px; width: 89.5px; 
-									background-image: url('../assets/ICON_Quality.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+									background-image: url('./assets/ICON_Quality.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 								</div>
 								<h5 class="card-title" style="display: grid; font-weight: 400; font-size: 22px; color: #3B82F6; justify-content: center; align-content: center;">QUALITY FIRST</h5>
 								<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 400; display: grid; justify-content: center; align-content: center;">
@@ -100,7 +100,7 @@ function AboutUsSection()
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
 									<div style="border-radius: 10%; height: 89.51px; width: 89.5px; 
-									background-image: url('../assets/ICON_Accountability.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+									background-image: url('./assets/ICON_Accountability.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 								</div>
 								<h5 class="card-title" style="display: grid; font-weight: 400; font-size: 22px; color: #3B82F6; justify-content: center; align-content: center;">ACCOUNTABILITY</h5>
 								<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 400; display: grid; justify-content: center; align-content: center;">
@@ -115,7 +115,7 @@ function AboutUsSection()
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
 									<div style="border-radius: 10%; height: 89.51px; width: 89.5px; 
-									background-image: url('../assets/ICON_Adaptability.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+									background-image: url('./assets/ICON_Adaptability.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 								</div>
 								<h5 class="card-title" style="display: grid; font-weight: 400; font-size: 22px; color: #3B82F6; justify-content: center; align-content: center;">ADAPTABILITY</h5>
 								<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 400; display: grid; justify-content: center; align-content: center;">
@@ -137,7 +137,7 @@ function AboutUsSection()
 					</h2>
 				</div>
 				<div style="display: flex; align-items: center; justify-content: center; justify-self: center; margin-top: 1%;
-					width: 80%; height: 376px; background-image: url('../assets/Timeline_HORIZONTAL_V2.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
+					width: 80%; height: 376px; background-image: url('./assets/Timeline_HORIZONTAL_V2.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
 				"></div>
 				
 			</div>
@@ -151,7 +151,7 @@ function AboutUsSection()
 				
 				<div id="AS9100DCertSec" style="justify-self: center;margin-top: 1%; width: 65%; height: 215px; background-color: white; display: flex;">
 					<div style="width: 50%; height: 100%; display: flex; align-items: center; justify-content: center;">
-						<div style="width: 497px; height: 144px; background-image: url('../assets/AS9100D-LOGO.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+						<div style="width: 497px; height: 144px; background-image: url('./assets/AS9100D-LOGO.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 					</div>
 					<div style="width: 50%; height: 100%;">
 						<p style="color: black; font-family: Roboto; width: 80%; justify-self: center; padding: 2%;">
@@ -182,8 +182,8 @@ function AboutUsSection()
 							<div class="card" style="width: 253px; height: 312px; border: none;">
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
-									<div src="../assets/Scott.jpg" alt="scottKunklerPic" style="border-radius: 50%;
-									background-image: url('../assets/Scott.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 253px; height: 254px;"></div>
+									<div src="./assets/Scott.jpg" alt="scottKunklerPic" style="border-radius: 50%;
+									background-image: url('./assets/Scott.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 253px; height: 254px;"></div>
 								</div>
 								<h5 class="card-title" style="display: grid; font-weight: 700; font-size: 24px; color: black; justify-content: center; align-content: center;">Scott Kunkler</h5>
 								<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 300; display: grid; justify-content: center; align-content: center;">
@@ -198,8 +198,8 @@ function AboutUsSection()
 							<div class="card" style="width: 253px; height: 312px; border: none;">
 								<div class="card-body">
 									<div style="display: flex; justify-content: center; align-items: center; ">
-										<div src="../assets/Scott.jpg" alt="scottKunklerPic" style="border-radius: 50%;
-									background-image: url('../assets/Dale.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 253px; height: 254px;"></div>
+										<div src="./assets/Scott.jpg" alt="scottKunklerPic" style="border-radius: 50%;
+									background-image: url('./assets/Dale.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 253px; height: 254px;"></div>
 									</div>
 									<h5 class="card-title" style="display: grid; font-weight: 700; font-size: 24px; color: black; justify-content: center; align-content: center;">Dale Witt</h5>
 									<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 300; display: grid; justify-content: center; align-content: center;">
@@ -214,8 +214,8 @@ function AboutUsSection()
 							<div class="card" style="width: 253px; height: 312px; border: none;">
 								<div class="card-body">
 									<div style="display: flex; justify-content: center; align-items: center; ">
-										<div src="../assets/Scott.jpg" alt="scottKunklerPic" style="border-radius: 50%;
-									background-image: url('../assets/Soria.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 253px; height: 254px;"></div>
+										<div src="./assets/Scott.jpg" alt="scottKunklerPic" style="border-radius: 50%;
+									background-image: url('./assets/Soria.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 253px; height: 254px;"></div>
 									</div>
 									<h5 class="card-title" style="display: grid; font-weight: 700; font-size: 24px; color: black; justify-content: center; align-content: center;">Soria Schwartz</h5>
 									<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 300; display: grid; justify-content: center; align-content: center;">
@@ -229,8 +229,8 @@ function AboutUsSection()
 							<div class="card" style="width: 253px; height: 312px; border: none;">
 								<div class="card-body">
 									<div style="display: flex; justify-content: center; align-items: center; ">
-										<div src="../assets/Scott.jpg" alt="scottKunklerPic" style="border-radius: 50%;
-									background-image: url('../assets/Mike.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 253px; height: 254px;"></div>
+										<div src="./assets/Scott.jpg" alt="scottKunklerPic" style="border-radius: 50%;
+									background-image: url('./assets/Mike.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 253px; height: 254px;"></div>
 									</div>
 									<h5 class="card-title" style="display: grid; font-weight: 700; font-size: 24px; color: black; justify-content: center; align-content: center;">Mike McHan</h5>
 									<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 300; display: grid; justify-content: center; align-content: center;">

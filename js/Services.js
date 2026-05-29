@@ -3,7 +3,7 @@ function ServicesPage()
     const servicesPage = document.getElementById("root");
     servicesPage.innerHTML = `
         				<div id="ServicesSectionHeader" style="width: 100%; height: 500px; display: grid; justify-content: center;	align-items: center;
-						background-image: linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)), url('../assets/SERVICES_HERO.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top;">
+						background-image: linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)), url('./assets/SERVICES_HERO.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top;">
 					<div style="display: flex; align-items: center; justify-content: center; margin-top: -7%;">
 						<h1 style="font-family: 'Industry Inc'; color: white;">SERVICES</h1>
 					</div>
@@ -14,7 +14,7 @@ function ServicesPage()
 					</div>	
 				</div>
 
-				<div id="ServicesOverviewSection" style="width: 100%; height: 199px; background-image: url('../assets/BACKGROUND_ServicesOverview.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+				<div id="ServicesOverviewSection" style="width: 100%; height: 199px; background-image: url('./assets/BACKGROUND_ServicesOverview.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: flex; align-items: center; justify-content: center; padding: 1%;">
 						<h3 style="font-family: 'Industry Inc'; color: black;">
 							SERVICES OVERVIEW
@@ -36,11 +36,11 @@ function ServicesPage()
 						</p>
 					</div>
 					<div id="EngDesignPhotos" style="width: 50%; height: 100%;
-					 background-image: url('../assets/EngineeringSection.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+					 background-image: url('./assets/EngineeringSection.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 				</div>
 
 				<div id="ProductDevTestingSec" style="width: 100%; height: 462px; 
-				background-image: url('../assets/BACKGROUND_ProdDevTesting.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+				background-image: url('./assets/BACKGROUND_ProdDevTesting.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: flex; align-items: center; justify-content: center;">
 						<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400; margin-top: 2%;">
 							PRODUCT DEVELOPMENT TESTING
@@ -163,7 +163,7 @@ function ServicesPage()
 					</div>
 					</div>
 				</div>
-				<div id="ProductManufacturingSection" style="width: 100%; height: 330px; background-image: url('../assets/BACKGROUND_ProductionManufacturing.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+				<div id="ProductManufacturingSection" style="width: 100%; height: 330px; background-image: url('./assets/BACKGROUND_ProductionManufacturing.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: flex; align-items: center; justify-content: center;">
 						<h2 style="color: white; font-family: 'Industry Inc'; font-weight: 400; margin-top: 5%;">
 							PRODUCT & MANUFACTURING
@@ -178,7 +178,7 @@ Our operations are supported by a state-of-the-art MRP system that manages sched
 					</div>
 				</div>
 				<div id="qualityPics" style="width: 100%; height: 445px; display: flex;">
-					<div style="width: 50%; height: 100%; background-image: url('../assets/QualitySection.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+					<div style="width: 50%; height: 100%; background-image: url('./assets/QualitySection.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 					<div style="width: 50%; height: 100%; background-color: #0F1720;">
 						<div style="display: flex; align-items: center; justify-content: center; height: 50%;">
 							<h2 style="color: white; font-family: Roboto; font-weight: 400; margin-left: 61%;">
@@ -197,10 +197,10 @@ Our operations are supported by a state-of-the-art MRP system that manages sched
 					</div>
 					</div>
 				</div>
-				<div id="RepairServicesSect" style="width: 100%; height: 372px; background-image: url('../assets/BACKGROUND_Repair.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+				<div id="RepairServicesSect" style="width: 100%; height: 372px; background-image: url('./assets/BACKGROUND_Repair.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: flex; align-items: center; justify-content: center;">
 						<div id="FAARepairPlaceHolder" style="margin-top: 3%; width: 150px; height: 150px;
-						background-image: url('../assets/Seal_of_the_United_States_Federal_Aviation_Administration.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+						background-image: url('./assets/Seal_of_the_United_States_Federal_Aviation_Administration.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 					</div>
 					<div style="display: flex; align-items: center; justify-content: center;">
 						<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400;">
@@ -215,7 +215,7 @@ Our operations are supported by a state-of-the-art MRP system that manages sched
 				</div>
 
 				<div id="GetInTouchSection" style="width: 100%; height: 257px; 
-				background-image: url('../assets/BACKGROUND_GetInTouch2.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+				background-image: url('./assets/BACKGROUND_GetInTouch2.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: grid; justify-content: center; position: relative;">
 					<h2 style="font-family: Roboto; margin-top: 6%; color: black; display: grid; justify-content: center;">
 						GET IN TOUCH
