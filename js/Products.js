@@ -1,3 +1,7 @@
+import cleanUp from "./CleanUp.js";
+import Contact from "./Contact.js";
+import ReturnProductsItemPage from './ProductsItemPage.js'
+
 function Products() {
     let ProductsLink = document.getElementById("root");
     ProductsLink.innerHTML = `
@@ -13,6 +17,7 @@ function Products() {
 				<div id="ProductsOverviewSect" style="width: 100%; height: 213px; background-image: url('./assets/BACKGROUND_ProductsSummary.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style=" display: flex; justify-content: center; align-items: center; padding: 1%;">
 						<h3 style="font-family: 'Industry Inc'; color: black; margin-top: 1%;">PRODUCTS OVERVIEW</h3></div>
+						</div>
 					<div style="display: flex; justify-content: center; align-items: center; width: 50%; justify-self: center;">
 						<p style="font-family: Roboto; color: black;">
 						NDI designs and manufactures precision hydro-mechanical components that support critical aerospace systems. From actuation and fluid control to braking components, our products are built for reliability, performance, and compliance with industry standards. This page provides an overview of our core product categories and capabilities.
@@ -23,116 +28,132 @@ function Products() {
 				display: grid; position: relative; align-items: center; justify-content: center;">
 					<div class="row" >
 						<div class="col">
-							<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
-								<div class="card-body" style="display: grid;">
-									<div style="width: 352.08px; height: 327px; background-image: url('./assets/Actuators.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-									<div style="justify-content: center; align-items: center; display: grid;">
-										<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">ACTUATORS</p>
+							<a style="text-decoration: none;" href="#" id="ACTUATOR_1">
+								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
+									<div class="card-body" style="display: grid;">
+										<div style="width: 352.08px; height: 327px; background-image: url('./assets/Actuators.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+										<div style="justify-content: center; align-items: center; display: grid;">
+											<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">ACTUATORS</p>
+										</div>
 									</div>
 								</div>
-							</div>
-
+							</a>
 						</div>
 						
 						<div class="col">
-							<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
-								<div class="card-body" style="display: grid;">
-									<div style="width: 352.08px; height: 327px; background-image: url('./assets/BrakeCaliperAssemblies.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-									<div style="justify-content: center; align-items: center; display: grid;">
-										<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
-											BRAKE CALIPER ASSEMBLIES</p>
+							<a style="text-decoration: none;" href="#" id="CALIPER ASSEMBLIES_2">
+								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
+									<div class="card-body" style="display: grid;">
+										<div style="width: 352.08px; height: 327px; background-image: url('./assets/BrakeCaliperAssemblies.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+										<div style="justify-content: center; align-items: center; display: grid;">
+											<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
+												BRAKE CALIPER ASSEMBLIES</p>
+										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						
 						<div class="col">
-							<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
-								<div class="card-body" style="display: grid;"> 
-									<div style="width: 352.08px; height: 327px; background-image: url('./assets/Accesories.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-									<div style="justify-content: center; align-items: center; display: grid;">
-										<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
-											ACCESSORIES</p>
+							<a style="text-decoration: none;" href="#" id="ACCESSORIES_3">
+								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
+									<div class="card-body" style="display: grid;"> 
+										<div style="width: 352.08px; height: 327px; background-image: url('./assets/Accesories.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+										<div style="justify-content: center; align-items: center; display: grid;">
+											<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
+												ACCESSORIES</p>
+										</div>
 									</div>
 								</div>
-							</div>
-
-						</div>
-					</div>
-					<div class="row" style="margin-top: 1%;">
-						
-						<div class="col">
-							<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
-								<div class="card-body" style="display: grid;">
-									<div style="width: 352.08px; height: 327px; background-image: url('./assets/RotorBrakeDisks.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-									<div style="justify-content: center; align-items: center; display: grid;">
-										<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
-											ROTOR BRAKE DISKS</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col">
-							<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
-								<div class="card-body" style="display: grid;">
-									<div style="width: 352.08px; height: 327px; background-image: url('./assets/DampingDevices.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-									<div style="justify-content: center; align-items: center; display: grid;">
-										<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
-											DAMPING DEVICES</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col">
-							<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
-								<div class="card-body" style="display: grid;">
-									<div style="width: 352.08px; height: 327px; background-image: url('./assets/FLowRateControl.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-									<div style="justify-content: center; align-items: center; display: grid;">
-										<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
-											FLOW RATE CONTROL</p>
-									</div>
-								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 					<div class="row" style="margin-top: 1%;">
 						
 						<div class="col">
-							<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
-								<div class="card-body" style="display: grid;">
-									<div style="width: 352.08px; height: 327px; background-image: url('./assets/FluidicCartridgeValves.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-									<div style="justify-content: center; align-items: center; display: grid;">
-										<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
-											FLUIDIC CARTRIDGE VALVES</p>
+							<a style="text-decoration: none;" href="#" id="ROTOR BRAKE DISKS_4">
+								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
+									<div class="card-body" style="display: grid;">
+										<div style="width: 352.08px; height: 327px; background-image: url('./assets/RotorBrakeDisks.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+										<div style="justify-content: center; align-items: center; display: grid;">
+											<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
+												ROTOR BRAKE DISKS</p>
+										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						
 						<div class="col">
-							<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
-								<div class="card-body" style="display: grid;">
-									<div style="width: 352.08px; height: 327px; background-image: url('./assets/MasterCylinder.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-									<div style="justify-content: center; align-items: center; display: grid;">
-										<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
-											MASTER CYLINDER</p>
+							<a style="text-decoration: none;" href="#" id="DAMPING DEVICES_5">
+								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
+									<div class="card-body" style="display: grid;">
+										<div style="width: 352.08px; height: 327px; background-image: url('./assets/DampingDevices.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+										<div style="justify-content: center; align-items: center; display: grid;">
+											<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
+												DAMPING DEVICES</p>
+										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						
 						<div class="col">
-							<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
-								<div class="card-body" style="display: grid;">
-									<div style="width: 352.08px; height: 327px; background-image: url('./assets/ReliefValves.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-									<div style="justify-content: center; align-items: center; display: grid;">
-										<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
-											RELIEF VALVES</p>
+							<a style="text-decoration: none;" href="#" id="FLOW RATE CONTROL_6">
+								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
+									<div class="card-body" style="display: grid;">
+										<div style="width: 352.08px; height: 327px; background-image: url('./assets/FLowRateControl.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+										<div style="justify-content: center; align-items: center; display: grid;">
+											<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
+												FLOW RATE CONTROL</p>
+										</div>
 									</div>
 								</div>
-							</div>
+							</a>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 1%;">
+						
+						<div class="col">
+							<a style="text-decoration: none;" href="#" id="FLUIDIC CARTRIDGE VALVES_7">
+								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
+									<div class="card-body" style="display: grid;">
+										<div style="width: 352.08px; height: 327px; background-image: url('./assets/FluidicCartridgeValves.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+										<div style="justify-content: center; align-items: center; display: grid;">
+											<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
+												FLUIDIC CARTRIDGE VALVES</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						
+						<div class="col">
+							<a style="text-decoration: none;" href="#" id="MASTER CYLINDERS_8">
+								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
+									<div class="card-body" style="display: grid;">
+										<div style="width: 352.08px; height: 327px; background-image: url('./assets/MasterCylinder.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+										<div style="justify-content: center; align-items: center; display: grid;">
+											<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
+												MASTER CYLINDER</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						
+						<div class="col">
+							<a style="text-decoration: none;" href="#" id="RELIEF VALVES_9">
+								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
+									<div class="card-body" style="display: grid;">
+										<div style="width: 352.08px; height: 327px; background-image: url('./assets/ReliefValves.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+										<div style="justify-content: center; align-items: center; display: grid;">
+											<p style="font-family: Roboto; color: black; font-size: 24px; font-weight: 400;">
+												RELIEF VALVES</p>
+										</div>
+									</div>
+								</div>
+							</a>
 						</div>
 					</div>
 
@@ -149,14 +170,36 @@ function Products() {
 						</p>
 					</div>
 					<div style="display: flex; justify-content: center; align-items: center;">
-						<button style="border-radius: 6px; background-color: #1E3A5F; color: white; width: 94px; height: 44px;">
+						<button id="ContactButton" style="border-radius: 6px; background-color: #1E3A5F; color: white; width: 94px; height: 44px;">
 							CONTACT</button>
 					</div>
 				</div>
     `;
 
+	const returnDetailsPage = (idInput) => {
+		cleanUp("root");
+		window.scroll(0,0);
+		ReturnProductsItemPage(idInput.split("_")[0], Number(idInput.split("_")[1]));
 
-    return ProductsLink;
+	}
+
+	document.getElementById("ContactButton").addEventListener("click", () => {
+		cleanUp("root");
+		window.scrollTo(0, 0);
+		Contact();
+
+	});
+	const idArr = ["ACTUATOR_1", "ACCESSORIES_3", "CALIPER ASSEMBLIES_2", "ROTOR BRAKE DISKS_4",
+		"DAMPING DEVICES_5", "FLOW RATE CONTROL_6", "FLUIDIC CARTRIDGE VALVES_7", 
+		"MASTER CYLINDERS_8", "RELIEF VALVES_9"
+	 ];
+
+	 idArr.forEach(item => {
+		document.getElementById(item).addEventListener("click", () => {
+			returnDetailsPage(item);
+		})
+	 })
+
 
 }
 

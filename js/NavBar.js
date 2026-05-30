@@ -8,6 +8,7 @@ const GenerateNavBar = () =>
     nav.id="NavBar";
     nav.className = "navbar navbar-expand-lg navbar-light bg-light";
     nav.style = "background-color: #FFFFFF !important; z-index: 1 !important;";
+    nav.style = "background-color: #FFFFFF !important; z-index: 1 !important;";
 
     nav.innerHTML = `
         <div class="container-fluid">

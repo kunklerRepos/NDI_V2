@@ -2,6 +2,8 @@ import GenerateNavBar from "./NavBar.js";
 import GenerateFooter from "./Footer.js";
 import selectedLink from "./SelectedLink.js";
 import MainPage from "./MainPage.js";
+import ReturnProductsItemPage from "./ProductsItemPage.js";
+
 
 const linksArr = ["HOMELink", "HOMELinkICON", "PRODUCTSLink", "SERVICESLink", "ABOUT_USLink", "CONTACTLink"];
 

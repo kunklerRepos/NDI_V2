@@ -1,9 +1,12 @@
+import cleanUp from "./CleanUp.js";
+import Contact from "./Contact.js";
+
 function ServicesPage()
 {
     const servicesPage = document.getElementById("root");
     servicesPage.innerHTML = `
-        				<div id="ServicesSectionHeader" style="width: 100%; height: 500px; display: grid; justify-content: center;	align-items: center;
-						background-image: linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)), url('./assets/SERVICES_HERO.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top;">
+        		<div id="ServicesSectionHeader" style="width: 100%; height: 500px; display: grid; justify-content: center;	align-items: center;
+						background-image:  linear-gradient(rgba(15, 23, 32, .8), rgba(40, 58, 77, .5)), url('./assets/SERVICES_HERO.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top;">
 					<div style="display: flex; align-items: center; justify-content: center; margin-top: -7%;">
 						<h1 style="font-family: 'Industry Inc'; color: white;">SERVICES</h1>
 					</div>
@@ -16,6 +19,7 @@ function ServicesPage()
 
 				<div id="ServicesOverviewSection" style="width: 100%; height: 199px; background-image: url('./assets/BACKGROUND_ServicesOverview.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: flex; align-items: center; justify-content: center; padding: 1%;">
+						<h3 style="font-family: 'Industry Inc'; color: black;">
 						<h3 style="font-family: 'Industry Inc'; color: black;">
 							SERVICES OVERVIEW
 						</h3>
@@ -42,6 +46,7 @@ function ServicesPage()
 				<div id="ProductDevTestingSec" style="width: 100%; height: 462px; 
 				background-image: url('./assets/BACKGROUND_ProdDevTesting.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: flex; align-items: center; justify-content: center;">
+						<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400; margin-top: 2%;">
 						<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400; margin-top: 2%;">
 							PRODUCT DEVELOPMENT TESTING
 						</h2>
@@ -166,6 +171,7 @@ function ServicesPage()
 				<div id="ProductManufacturingSection" style="width: 100%; height: 330px; background-image: url('./assets/BACKGROUND_ProductionManufacturing.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<div style="display: flex; align-items: center; justify-content: center;">
 						<h2 style="color: white; font-family: 'Industry Inc'; font-weight: 400; margin-top: 5%;">
+						<h2 style="color: white; font-family: 'Industry Inc'; font-weight: 400; margin-top: 5%;">
 							PRODUCT & MANUFACTURING
 						</h2>
 					</div>
@@ -180,17 +186,17 @@ Our operations are supported by a state-of-the-art MRP system that manages sched
 				<div id="qualityPics" style="width: 100%; height: 445px; display: flex;">
 					<div style="width: 50%; height: 100%; background-image: url('./assets/QualitySection.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 					<div style="width: 50%; height: 100%; background-color: #0F1720;">
-						<div style="display: flex; align-items: center; justify-content: center; height: 50%;">
+						<div style="display: flex; align-items: center; justify-content: center; height: 25%;">
 							<h2 style="color: white; font-family: Roboto; font-weight: 400; margin-left: 61%;">
 								QUALITY
 							</h2>
 						</div>
-						<div style="display: flex; align-items: center; justify-content: center; height: 50%; margin-top: -15%;">
+						<div style="display: flex; align-items: center; justify-content: center;">
 							<p style="color: white; font-family: Roboto; width: 80%; justify-self: center;">
 								Quality is foundational to every aspect of NDI’s operations. Our AS9100-compliant quality management system is a proactive, risk-based framework designed to ensure that all products meet rigorous safety, airworthiness, and performance standards.
 							</p>
 					</div>
-					<div style="display: flex; align-items: center; justify-content: center; height: 50%; margin-top: -15%;">
+					<div style="display: flex; align-items: center; justify-content: center;">
 							<p style="color: white; font-family: Roboto; width: 80%; justify-self: center;">
 								We partner with certified third-party processing providers for specialized services such as heat treatment, coatings, chemical processing, and non-destructive testing. This integrated approach ensures consistency, traceability, and compliance throughout the entire product lifecycle.
 							</p>
@@ -203,6 +209,7 @@ Our operations are supported by a state-of-the-art MRP system that manages sched
 						background-image: url('./assets/Seal_of_the_United_States_Federal_Aviation_Administration.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 					</div>
 					<div style="display: flex; align-items: center; justify-content: center;">
+						<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400;">
 						<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400;">
 							REPAIR SERVICES
 						</h2>
@@ -225,7 +232,7 @@ Our operations are supported by a state-of-the-art MRP system that manages sched
 						Reach out to discuss your needs, request a quote, or learn more about how we can
 						 support your next mission.
 					</p>
-					<button style="border-radius: 6px; background-color: #1E3A5F; color: white; width: 94px; height: 44px; justify-self: center;">
+					<button id="ContactButton" style="border-radius: 6px; background-color: #1E3A5F; color: white; width: 94px; height: 44px; justify-self: center;">
 						CONTACT</button>
 					</div>
 
@@ -233,8 +240,11 @@ Our operations are supported by a state-of-the-art MRP system that manages sched
 
     `; 
 
-
-    return servicesPage;
+	document.getElementById("ContactButton").addEventListener("click", () => {
+		cleanUp("root");
+		window.scrollTo(0, 0);
+		Contact();
+	});
 }
 
 export default ServicesPage;

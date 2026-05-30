@@ -21,6 +21,7 @@ const selectedLink = (elementId) =>
             MainPage();
             break;
         
+        
         case "PRODUCTSLink":
             ProductsPage();
             break;

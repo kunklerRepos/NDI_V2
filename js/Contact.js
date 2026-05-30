@@ -20,7 +20,9 @@ function ContactPage()
 								<div class="card" style="width: 323px; height: 173px;">
 									<div class="card-body">
 										<div style="display: flex; justify-content: center; align-items: center; ">
-											<img alt="SendEmailIcon" style="border-radius: 5%; width: 64px; height: 64px;"/>
+											<div style="border-radius: 5%; width: 64px; height: 64px;
+												background-image: url('./assets/ICON_Email.png'); background-size: cover; background-position: center; background-repeat: no-repeat;
+											"></div>
 										</div>
 										<h5 class="card-title" style="display: grid; font-weight: 700; font-size: 20px; color: black; justify-content: center; align-content: center;">Send Us An Email</h5>
 										<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 500; display: grid; justify-content: center; align-content: center;">
@@ -31,7 +33,9 @@ function ContactPage()
 								<div class="card" style="width: 216px; height: 173px; margin-left: 3%;">
 									<div class="card-body">
 										<div style="display: flex; justify-content: center; align-items: center; ">
-											<img alt="CallPhoneIcon" style="border-radius: 5%; width: 64px; height: 64px;"/>
+											<div  style="border-radius: 5%; width: 64px; height: 64px;
+												background-image: url('./assets/ICON_Phone.png'); background-size: cover; background-position: center; background-repeat: no-repeat;
+											"></div>
 										</div>
 										<h5 class="card-title" style="display: grid; font-weight: 700; font-size: 20px; color: black; justify-content: center; align-content: center;">Call us directly</h5>
 										<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 500; display: grid; justify-content: center; align-content: center;">
@@ -44,7 +48,9 @@ function ContactPage()
 								<div class="card" style="width: 323px; height: 173px;">
 									<div class="card-body">
 										<div style="display: flex; justify-content: center; align-items: center; ">
-											<img alt="MapPinDropLocation" style="border-radius: 5%; width: 64px; height: 64px;"/>
+											<div style="border-radius: 5%; width: 64px; height: 64px;
+												background-image: url('./assets/ICON_Location.png'); background-size: cover; background-position: center; background-repeat: no-repeat;
+											"></div>
 										</div>
 										<h5 class="card-title" style="display: grid; font-weight: 700; font-size: 20px; color: black; justify-content: center; align-content: center;">Visit our location</h5>
 										<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 500; display: grid; justify-content: center; align-content: center;">
@@ -55,7 +61,9 @@ function ContactPage()
 								<div class="card" style="width: 216px; height: 173px; margin-left: 3%;">
 									<div class="card-body">
 										<div style="display: flex; justify-content: center; align-items: center; ">
-											<img alt="ClockIcon" style="border-radius: 5%; width: 64px; height: 64px;"/>
+											<div style="border-radius: 5%; width: 64px; height: 64px;
+												background-image: url('./assets/ICON_Clock.png'); background-size: cover; background-position: center; background-repeat: no-repeat;
+											"></div>
 										</div>
 										<h5 class="card-title" style="display: grid; font-weight: 700; font-size: 20px; color: black; justify-content: center; align-content: center;">Working Hours</h5>
 										<p class="card-text" style="font-family: Roboto; color: black; font-size: 16px; font-weight: 500; display: grid; justify-content: center; align-content: center;">

@@ -5,32 +5,32 @@ function AboutUsSection()
     <div id="AboutUsHeaderSec" style="width: 100%; height: 450px; display: flex;">
 				<div id="AboutUsText2" style="width: 50%; height: 450px; background-color: #0F1720;">
 					<div id="AboutUs2Header" 
-					style="display: flex; align-items: center; justify-content: start; height: 50%; margin-left: 10%;">
+					style="display: flex; align-items: center; justify-content: start; height: 25%; margin-left: 10%;">
 						<h2 style="color: white; font-family: 'Industry Inc'; font-weight: 400;">
 							ABOUT US
 						</h2>
 
 					</div>
-					<div id="AboutUs2Text" style="display: flex; align-items: center; justify-content: center; height: 50%; margin-top: -15%;">
+					<div id="AboutUs2Text" style="display: flex; align-items: center; justify-content: center;">
 						<p style="color: white; font-family: Roboto; width: 80%; justify-self: center;">
 							NDI is a precision aerospace manufacturer specializing in the design, development, and production of hydro-mechanical components and control systems. Our work supports critical aircraft functions, including actuation, fluid regulation, and braking systems, where performance and reliability are essential.
 						</p>
 						
 					</div>
 
-					<div id="AboutUs2Text2" style="display: flex; align-items: center; justify-content: center; height: 50%; margin-top: -15%;">
+					<div id="AboutUs2Text2" style="display: flex; align-items: center; justify-content: center;">
 						<p style="color: white; font-family: Roboto; width: 80%; justify-self: center;">
 							With a balanced approach that combines in-house machining and trusted external partnerships, NDI maintains both quality control and production flexibility. This model allows us to efficiently scale operations while meeting the evolving demands of the aerospace industry.
 						</p>
 					</div>
 
-					<div id="AboutUs2Text3" style="display: flex; align-items: center; justify-content: center; height: 50%; margin-top: -15%;">
+					<div id="AboutUs2Text3" style="display: flex; align-items: center; justify-content: center;">
 						<p style="color: white; font-family: Roboto; width: 80%; justify-self: center;">
 							Every component we produce is built with a focus on durability, accuracy, and consistency. From initial concept through final manufacturing, our team is committed to delivering solutions that perform reliably in demanding environments.
 						</p>
 					</div>
 				</div>
-				<div id="AboutUsPhoto2" style="width: 50%; height: 450px; 
+				<div id="AboutUsPhoto2" style="width: 50%; height: 100%; 
 				background-image: url('./assets/WhoWeAre.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
 			</div>
 			<div id="MissionValuesSection" style="width: 100%; height: 558px; 
@@ -137,13 +137,14 @@ function AboutUsSection()
 					</h2>
 				</div>
 				<div style="display: flex; align-items: center; justify-content: center; justify-self: center; margin-top: 1%;
-					width: 80%; height: 376px; background-image: url('./assets/Timeline_HORIZONTAL_V2.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
+					width: 80%; height: 376px; background-image: url('./assets/Timeline_HORIZONTAL_V2.png'); background-size: contain; background-repeat: no-repeat; background-position: center;
 				"></div>
 				
 			</div>
 
 			<div id="CERTIFICATIONSSection2" style="height: 626px; width: 100%; background-color: #2A3D52">
 				<div style="display: flex; align-items: center; justify-content: center;">
+					<h2 style="color: white; font-family: 'Industry Inc'; font-weight: 400; margin-top: 2%;">
 					<h2 style="color: white; font-family: 'Industry Inc'; font-weight: 400; margin-top: 2%;">
 						CERTIFICATIONS
 					</h2>
@@ -172,6 +173,7 @@ function AboutUsSection()
 			</div>
 			<div id="MeetTheTeamSection" style="height: 500px; width: 100%;">
 				<div style="display: flex; align-items: center; justify-content: center;">
+					<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400; margin-top: 1%;">
 					<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400; margin-top: 1%;">
 						MEET THE TEAM
 					</h2>

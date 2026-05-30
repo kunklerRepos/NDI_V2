@@ -1,3 +1,9 @@
+import cleanUp from "./CleanUp.js";
+import Contact from "./Contact.js";
+import Products from "./Products.js";
+import ServicesPage from "./Services.js";
+import AboutUsSection from "./AboutUs.js";
+
 function MainPage()
 {
     const MainPageDiv = document.getElementById("root");
@@ -5,6 +11,7 @@ function MainPage()
 
     `	<div id="IMG_Hero">
 		<h3 class="MainHeaderFont">Precision Aerospace Components for High-Performance Systems</h3>
+		<p class="subHeadingFont">Delivering reliable, high-quality components and solutions for mission-critical applications.</p>
 		<p class="subHeadingFont">Delivering reliable, high-quality components and solutions for mission-critical applications.</p>
 	</div>
 	<div>
@@ -16,7 +23,8 @@ function MainPage()
 	</div>
 
 
-	<div id="WhatWeDoMenuSection" style="height: 1015px; background-image: linear-gradient(rgb(24, 35, 48), rgb(15, 23, 32, .3) ), url('./assets/BACKGROUND_WhatWeDo.png'); display: grid; position: relative; align-items: center; justify-content: center;" >
+
+	<div id="WhatWeDoMenuSection" style="height: 1015px; background-image: linear-gradient(rgb(24, 35, 48), rgb(15, 23, 32, .3) ), url('../assets/BACKGROUND_WhatWeDo.png'); display: grid; position: relative; align-items: center; justify-content: center;" >
 		<div id="WhatWeDoSection" style="border-bottom: 1px solid white; position: relative; top: 18%;">
 			<h2 class="Header2Font">WHAT WE DO</h2>
 
@@ -28,6 +36,8 @@ function MainPage()
 		</div>
 
 	
+
+	
 		<div class="row">
 			<div class="col">
 			<div class="card" style="width: 384px; height: 369px; margin-right: 1%; background-color: #182330;"> 
@@ -37,7 +47,7 @@ function MainPage()
 					</div>
 					<p class="card-text" style="margin-top:15%; color: white !important; font-family: Roboto; ">Hydro-mechanical aerospace components engineered for reliability</p>
 					<div style="justify-content: center; align-items: center; display: grid;">
-						<a href="#" class="btn btn-primary" style="border: none; background-color: white !important; color: black !important">VIEW PRODUCTS</a>
+						<a href="#" id="ViewProductsButton" class="btn btn-primary" style="border: none; background-color: white !important; color: black !important">VIEW PRODUCTS</a>
 					</div>
 				</div>
 			</div>
@@ -51,7 +61,7 @@ function MainPage()
 					</div>
 					<p class="card-text" style="margin-top:15%; color: white !important; font-family: Roboto; ">Design and development solutions backed by decades of experience.</p>
 					<div style="justify-content: center; align-items: center; display: grid;">
-						<a href="#" class="btn btn-primary" style="border: none; background-color: white !important; color: black !important">EXPLORE SERVICES</a>
+						<a href="#" id="ExploreServicesButton" class="btn btn-primary" style="border: none; background-color: white !important; color: black !important">EXPLORE SERVICES</a>
 					</div>
 				</div>
 			</div>
@@ -59,19 +69,20 @@ function MainPage()
 
 			<div class="col">
 
-			<div class="card" style="width: 384px; height: 369px; margin-right: 1%; background-color: #182330;"> 
-				<div class="card-body" style="display: grid; background-image: linear-gradient( rgb(29, 57, 94, .3), rgba(30, 58, 95,.59 )), url('./assets/TestingCard.jpg'); background-size: cover; background-position: center;">
-					<div style="display: grid; justify-content: center; margin-top: 37%;">
-						<h5 class="card-title" style="color: white; font-family: Industry Inc;">TESTING</h5>
-					</div>
-					<p class="card-text" style="margin-top:15%; color: white !important; font-family: Roboto; ">Advanced testing capabilities for performance and validation</p>
-					<div style="justify-content: center; align-items: center; display: grid;">
-						<a href="#" class="btn btn-primary" style="border: none; background-color: white !important; color: black !important">LEARN MORE</a>
+				<div class="card" style="width: 384px; height: 369px; margin-right: 1%; background-color: #182330;"> 
+					<div class="card-body" style="display: grid; background-image: linear-gradient( rgb(29, 57, 94, .3), rgba(30, 58, 95,.59 )), url('./assets/TestingCard.jpg'); background-size: cover; background-position: center;">
+						<div style="display: grid; justify-content: center; margin-top: 37%;">
+							<h5 class="card-title" style="color: white; font-family: Industry Inc;">TESTING</h5>
+						</div>
+						<p class="card-text" style="margin-top:15%; color: white !important; font-family: Roboto; ">Advanced testing capabilities for performance and validation</p>
+						<div style="justify-content: center; align-items: center; display: grid;">
+							<a href="#" class="btn btn-primary" style="border: none; background-color: white !important; color: black !important">LEARN MORE</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			</div>
 		</div>
+
 		<div class="row" style="margin-top: 2%;">
 			<div class="col">
 				<div class="card" style="width: 384px; height: 369px; margin-right: 1%; background-color: #182330;"> 
@@ -93,12 +104,13 @@ function MainPage()
 					<div class="card-body" style="display: grid; background-image: linear-gradient( rgb(29, 57, 94, .3), rgba(30, 58, 95,.59 )), url('./assets/RepairCard.jpg'); background-size: cover; background-position: center;">
 						<div style="display: grid; justify-content: center; margin-top: 37%;">
 							<h5 class="card-title" style="color: white; font-family: Industry Inc;">REPAIR SERVICES</h5>
+							
 						</div>
 						<p class="card-text" style="margin-top:15%; color: white !important; font-family: Roboto; ">
 							FAA-certified inspection, repair, and overhaul support.	
 						</p>
 						<div style="justify-content: center; align-items: center; display: grid;">
-							<a href="#" class="btn btn-primary" style="border: none; background-color: white !important; color: black !important">CONTACT US</a>
+							<a id="ContactUsLink" href="#" class="btn btn-primary" style="border: none; background-color: white !important; color: black !important">CONTACT US</a>
 						</div>
 					</div>
 				</div>
@@ -106,7 +118,7 @@ function MainPage()
 		
 			<div class="col"></div>	
 		</div>
-		</div>
+	</div>
 
 		<div id="certificationSection" style="height: 468px; width: 100%; display: flex; background-image: url('./assets/CertificationsSection.jpg'); background-size: cover; background-position: center;">
 			<div id="CertWell1" style="height: 100%; width: 50%;"></div>
@@ -116,6 +128,7 @@ function MainPage()
 					<div class="card-body" >
 						<div style="display: grid; justify-content: center; margin-top: 5%;">
 							<h3 class="card-title" style="font-family: Industry Inc; color: white;">CERTIFICATIONS</h3>
+							
 						</div>
 							
 						<p class="card-text" style="font-family: Roboto; color: white;">
@@ -143,6 +156,7 @@ function MainPage()
 			</div>
 			<div id="TestWell2" style="height: 100%; width: 50%;">
 
+				
 				<div class="card" style="width: 18rem; margin-top: 5%;">
 					<div class="card-body">
 						
@@ -158,8 +172,13 @@ function MainPage()
 
 			</div>
 			</div>
+
 			<div id="WhoWeAreSection" style="height: 499px; width: 100%; display: flex;">
-				<div id="WhoWeArePhoto" style="width: 50%; height: 100%;"></div>
+				<div id="WhoWeArePhoto" style="width: 50%; height: 100%;">
+					<div style="width: 100%; height: 100%; background-image: url('./assets/WhoWeAre2.jpg');
+					 background-size: cover; background-position: center;">
+					</div>
+				</div>
 				<div id="WhoWeAreText" style="width: 50%; height: 100%; background-color: #0F1720;">
 					<div style="margin-top: 5%;">
 						<h2 style="font-family: Roboto; color: white; float: right; margin-right: 5%;">
@@ -186,14 +205,40 @@ function MainPage()
 					GET IN TOUCH
 				</h2>
 				<p style="font-family: Roboto; color: black; width: 65%; justify-self: center;">
+				<p style="font-family: Roboto; color: black; width: 65%; justify-self: center;">
 					Have a project in mind or need more information? Our team is here to help. Reach out to discuss your needs, request a quote, or learn more about how we can support your next mission.
 				</p>
-				<button style="border-radius: 6px; background-color: #1E3A5F; color: white; width: 94px; height: 44px; justify-self: center;">
+				<button id="ContactButton" style="border-radius: 6px; background-color: #1E3A5F; color: white; width: 94px; height: 44px; justify-self: center;">
 						CONTACT</button>
 				</div>
 			</div>`
 
-            return MainPageDiv;
+			document.getElementById("ContactUsLink").addEventListener("click", ()=>{
+				cleanUp("root");
+				window.scroll(0,0);
+				Contact();
+			})
+
+			document.getElementById("ExploreServicesButton").addEventListener("click", () => {
+				cleanUp("root");
+				window.scroll(0,0);
+				ServicesPage();
+
+
+			});
+
+
+			document.getElementById("ViewProductsButton").addEventListener("click", () => {
+				cleanUp("root");
+				window.scrollTo(0, 0);
+				Products();
+			});
+
+			document.getElementById("ContactButton").addEventListener("click", () => {
+				cleanUp("root");
+				window.scrollTo(0, 0);
+				Contact();
+			});
 }
 
 export default MainPage;
