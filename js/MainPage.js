@@ -41,7 +41,7 @@ function MainPage()
 			<div class="row">
 				<div class="col">
 					<div class="card engineeringCardSettings" > 
-						<div class="card-body engineeringCardBodySettings" style="background-image: linear-gradient( rgb(29, 57, 94, .3), rgba(30, 58, 95,.59 )), url('../assets/ProductsCard.jpg');">
+						<div class="card-body engineeringCardBodySettings" style="background-image: linear-gradient( rgb(29, 57, 94, .3), rgba(30, 58, 95,.59 )), url('./assets/ProductsCard.jpg');">
 							<div class="WhatWeDoCardSectionBodies">
 								<h5 class="card-title engineeringCardTextTitle">PRODUCTS</h5>
 							</div>
@@ -129,7 +129,7 @@ function MainPage()
 		<div id="testimonialsSection">
 			<div id="TestWell1" >
 				<h2 id="testimonialsHeading" >TESTIMONIALS</h2>
-				<p style="font-family: Roboto; color: #182330; margin-top: 5%; margin-left: 10%;">
+				<p id="testminonalSectionText2">
 					NDI is committed to delivering reliable solutions, responsive support, and consistent quality. Our long-standing relationships are built on precision, performance, and customer trust. We value strong communication, dependable service, and lasting relationships with every customer we support. Our team is dedicated to delivering solutions with precision and care.
 
 				</p>

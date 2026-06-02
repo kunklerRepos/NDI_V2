@@ -155,7 +155,12 @@ function AboutUsSection()
 				</div>
 
 				<div id="FAACertSec">
-					<div id="FAALogoSection"></div>
+					<div id="FAALogoSection">
+						<div id="FAALogo"></div>
+						<p id="FAACertTextAboutUs">
+							Federal Aviation Administration
+						</p>
+					</div>
 					<div id="FAATextSection">
 						<p id="FAAText" >
 							As an FAA Certified Repair Station, NDI is authorized to perform specialized repair and maintenance services in compliance with federal aviation regulations. This designation demonstrates our ability to meet rigorous safety, documentation, and operational standards required by the industry. Through this certification, we provide reliable service and support that ensures the continued performance and airworthiness of critical aerospace components.
