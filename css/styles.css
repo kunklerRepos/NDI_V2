@@ -1,6 +1,8 @@
 /* IMG_Hero */
 #IMG_Hero {
 width: 100%;
+margin-top: -15% !important;
+position: relative;     
 height: 1000px;
 margin-top: -15% !important;
 position: relative;     
@@ -13,6 +15,8 @@ background-repeat: no-repeat !important;
 background:  url('../assets/HOME_HERO.jpg');
 
 }
+
+/*@media (max-width: )*/
 
 body
 {
@@ -39,8 +43,9 @@ bottom: 0%;
 
 background: #FFFFFF;
 }
-
-/* BUTTON_Contact */
+@media screen and (min-width: 601px)
+{
+    /* BUTTON_Contact */
 #BUTTON_Contact {
 position: absolute;
 left: 88.54%;
@@ -108,6 +113,8 @@ text-align: center;
 color: #0F1720;
 
 }
+}
+
 
 /* LOGO_PLACEHOLDER */
 #LOGO_PLACEHOLDER {
@@ -128,23 +135,34 @@ background: #1E3A5F;
 /* Precision Aerospace Components for High-Performance Systems */
 .MainHeaderFont
 {
-position: absolute;
-width: 35%;
-height: 100px;
-/*left: calc(50% - 830px/2);*/
-top: 46%;
-left: 12%;
-font-family: 'Industry Inc';
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 50px;
-/* or 100% */
-text-align: start;
-letter-spacing: -0.05em;
+    position: absolute;
+    width: 35%;
+    height: 100px;
+    /*left: calc(50% - 830px/2);*/
+    top: 46%;
+    left: 12%;
+    font-family: 'Industry Inc';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    /* or 100% */
+    text-align: start;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+}
 
-color: #FFFFFF;
-
+.subHeadingFont
+{
+    font-family: 'Industry Inc';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    position: relative; 
+    top: 60%;
+    left: 12%;
+    color: white;
 }
 
 .subHeadingFont
@@ -172,7 +190,31 @@ color: #FFFFFF;
     width: 100%;
     height: 100px;
     margin-top: -6%;
+    display: grid;
+    align-items: start;
+    justify-content: center;
 }
+
+#CertWell1, #CertWell2
+{
+    height: 100%; width: 50%;
+}
+
+#certificationSection
+{
+    height: 468px; width: 100%; display: flex;
+     background-image: url('../assets/CertificationsSection.jpg');
+     background-size: cover; background-position: center;
+}
+
+.mainCertCard
+{
+    width: 70%; height: 87%; top: 7%; 
+				background-image: linear-gradient(to right,rgba(73, 111, 192, 0.5), rgba(17, 34, 101, 0.3)),
+				 url('../assets/BACKGROUND_CertificationsMat.png'); background-size: cover; background-position: center;  margin-left: 15%; border: none;
+}
+
+
 /* SPACING */
 /* What We Do */
 .Header2Font{
@@ -184,8 +226,6 @@ color: #FFFFFF;
     line-height: 53px;
     /* identical to box height */
     text-align: center;
-
-    /* White */
     color: #FFFFFF;
 }
 
@@ -193,8 +233,6 @@ color: #FFFFFF;
 .WhatWeDoFont{
 position: relative;
 width: 565px;
-/*left: 120px;
-top: 702px;*/
 display: grid;
 justify-self: center;
 margin-bottom: 3%;
@@ -210,3 +248,224 @@ color: #FFFFFF;
 }
 
 
+#WhatWeDoMenuSection
+{
+    height: 1015px; 
+    background-image: linear-gradient(rgb(24, 35, 48), rgb(15, 23, 32, .3) ), url('../assets/BACKGROUND_WhatWeDo.png');
+    display: grid;
+    position: relative;
+    align-items: center;
+     justify-content: center;
+}
+
+#WhatWeDoSection
+{
+    border-bottom: 1px solid white;
+    position: relative;
+    top: 18%;
+}
+
+.WhatWeDoCardSectionBodies
+{
+    display: grid; justify-content: center; margin-top: 37%;
+}
+
+.engineeringCardSettings
+{
+    justify-self: center; margin-bottom: 3%; width: 384px; height: 369px; margin-right: 1%; background-color: #182330;
+}
+
+.engineeringCardBodySettings
+{
+    display: grid;  background-size: cover; background-position: center;
+}
+
+.engineeringCardTextTitle
+{
+    color: white; font-family: Industry Inc;
+}
+
+#testimonialsSection
+{
+    height: 396px; width: 100%; display: flex; background-image: url('../assets/BACKGROUND_Testimonials.png'); background-size: cover; background-position: center;
+}
+
+#testimonialsHeading
+{
+    font-family: Roboto;
+    color: #182330; 
+    margin-top: 5%; 
+    margin-left: 10%;
+}
+
+
+#TestWell1,
+#TestWell2
+{
+    height: 100%; width: 50%;
+}
+ #WhatWeDoCardsContainer
+    {
+        margin-top: 3%;
+    }
+
+#WhoWeAreSection
+{
+    height: 499px; width: 100%; display: flex;
+}
+
+#WhoWeArePhoto
+{
+    width: 50%; height: 100%;
+} 
+#WhoWeAreText
+{
+    width: 50%; height: 100%; background-color: #0F1720;
+}
+
+#GetInTouchSection
+{
+    width: 100%; height: 257px; background-image: url('../assets/BACKGROUND_GetInTouch.png'); background-size: cover; background-position: center;
+}
+
+@media screen and (max-width: 600px)
+{
+    #GetInTouchSection
+    {
+        position: relative;
+        height: auto;
+        padding: 5%;
+    }
+    #WhoWeAreText   
+    {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        display: grid;
+        padding: 5%;
+    }
+
+    #WhoWeAreSection
+    {
+        display: grid;
+        justify-content: center;
+        height: auto;
+        position: relative;
+    }
+
+    #WhoWeArePhoto
+    {
+        width: 100%; 
+        height: 450px;
+    } 
+
+    #TestWell1,
+    #TestWell2
+    {
+        display: grid; justify-content: center;
+        width: 100%;
+    }
+
+    #testimonialsHeading
+    {
+        margin-left: 0%;
+        display: grid; 
+        justify-content: center;
+        position: relative;
+    }
+    #testimonialsSection
+    {
+        height: auto;
+        display: grid !important;
+        width: 100%;
+        position: relative;
+        margin-top: 47%;
+        padding: 5%;
+    }
+    .mainCertCard
+    {
+        height: auto;
+        width: 100%;
+        margin-left: 0% !important; 
+        top: 0%;
+        background-image: linear-gradient(to right,rgba(73, 111, 192, 0.5), rgba(17, 34, 101, 0.3)),
+				 url('../assets/BACKGROUND_CertificationsMat.png'); background-size: cover; background-position: center;  margin-left: 15%; border: none;
+    }
+    #blankCardCol
+    {
+        display: none;
+    }
+
+    .WhatWeDoFont
+    {
+        width: 350px;
+    }
+
+    #certificationSection
+    {
+        background-image: none;
+        display: grid;
+    }
+    #CertWell1
+    {
+        background-image: url('../assets/CertificationsSection.jpg');
+        background-size: cover; background-position: center;
+        width: 100%;
+        height: 281px;
+
+    }
+    #CertWell2
+    {
+        width: 100%;
+    }
+    #BACKGROUND_BlueGradient
+    {
+
+        background: url('../assets/HeroBaseOverlay_mobile.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-top: -9%;
+
+    }
+    #IMG_Hero{
+        height: 530px; 
+
+    }
+    .MainHeaderFont
+    {
+        width: 350px;
+        font-size: 25px;
+        text-align: left;
+        line-height: 25px;
+
+    }
+    .subHeadingFont
+    {
+        font-size: 17px;
+        width: 350px;
+    }
+    #WhatWeDoMenuSection
+    {
+        height: auto !important;
+        margin-top: -13%;
+    }
+    #certificationSection
+    {
+        display: grid;
+    }
+    #WhatWeDoCardsContainer
+    {
+        margin-top: 10% !important;
+    }
+
+}
+
+@media screen and (max-width: 450px)
+{
+    #testimonialsSection
+    {
+        margin-top: 64%;
+    }
+
+}

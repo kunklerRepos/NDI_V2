@@ -1,0 +1,230 @@
+#AboutUsHeaderSec
+{
+    width: 100%; height: 450px; display: flex;
+}
+
+#AboutUsTextSection
+{
+    width: 50%; height: 450px; background-color: #0F1720;
+}
+
+#AboutUs2Header
+{
+    display: flex; align-items: center; justify-content: start; height: 25%; margin-left: 10%;
+}
+
+#AboutUs2Text
+{
+    display: flex; align-items: center; justify-content: center;
+}
+
+#AboutUsPhoto2
+{
+    width: 50%; height: 100%; 
+	background-image: url('../assets/WhoWeAre.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;
+}
+
+#MissionValuesSection
+{
+    width: 100%; height: 558px; 
+			background-image: url('../assets/BACKGROUND_Timeline.png'); 
+            background-size: cover; background-repeat: no-repeat; 
+            background-position: center;
+}
+
+#MissionValuesBlueBox
+{
+    display: flex; align-items: center; width: 65%; 
+    justify-self: center; justify-content: center; border-radius: 5px; 
+	background-color: #3B82F6
+}
+
+#MissionValuesBlueBoxText
+{
+    color: white; font-family: Roboto; width: 60%; justify-self: center; padding: 2%;
+}
+
+#TimelineImage
+{
+    display: flex; align-items: center; justify-content: center; justify-self: center; margin-top: 1%;
+	width: 80%; height: 376px; background-image: url('../assets/Timeline_HORIZONTAL_V2.png'); 
+    background-size: contain; background-repeat: no-repeat; background-position: center;
+				
+}
+
+#CERTIFICATIONSSection2
+{
+    height: 626px; width: 100%; background-color: #2A3D52;
+
+}
+
+#AS9100DCertSec
+{
+    justify-self: center;margin-top: 1%; width: 65%; height: 215px; background-color: white; display: flex;
+}
+
+#FAACertSec
+{
+    justify-self: center; margin-top: 2%; width: 65%; height: 215px; background-color: white; display: flex;
+}
+
+#AS9100DCertSec2
+{
+    width: 50%; height: 100%; display: flex; align-items: center; justify-content: center;
+}
+#AS9100DLogo
+{
+    width: 497px; height: 144px; background-image: url('../assets/AS9100D-LOGO.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
+}
+
+#AS9100DTextSection
+{
+    width: 50%; height: 100%;
+}
+#AS9100DText
+{
+    color: black; font-family: Roboto; width: 80%; justify-self: center; padding: 2%;
+}
+#FAATextSection
+{
+    width: 50%; height: 100%;
+}
+#FAALogoSection
+{
+    width: 50%; height: 100%;
+}
+#FAAText
+{
+    color: black; font-family: Roboto; width: 80%; justify-self: center; padding: 2%;
+}
+
+@media screen and (max-width: 600px) {
+    .MeetTheTeamRow
+    {
+        padding: 5%;
+    }
+
+    .MeetTheTeamCard
+    {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 6%;
+    }   
+
+    #FAALogoSection
+    {
+        width: 100%; height: 144px;
+    }
+
+    #FAACertSec
+    {
+        display: grid;
+        width: 90%;
+        height: auto;
+    }
+
+    #FAAText
+    {
+        width: 90%;
+    }
+    #AS9100DText
+    {
+        width: 90%;
+
+    }
+
+    #FAATextSection
+    {
+        width: 100%;
+    }
+    #AS9100DTextSection
+    {
+        width: 100%;
+
+    }
+    #AS9100DLogo
+    {
+        width: 100%; height: 144px;
+
+    }
+    #AS9100DCertSec
+    {
+        display: grid;
+        width: 90%;
+        height: auto;
+    }
+    #AS9100DCertSec2
+    {
+        width: 100%;
+    }
+
+
+
+    #TimelineImage
+    {
+        height: 1275px;
+        background-image: url('../assets/Timeline_VERTICAL_V2.png');
+    }
+    .MissionCardCols
+    {
+        justify-content: center;
+        display: grid;
+        margin-bottom: 3%;
+    }
+
+    #MissionValuesBlueBoxText
+    {
+        width: 90%;
+        text-align: center;
+    }
+
+    #MissionValuesBlueBox
+    {
+        display: grid;
+        width: 90%;
+
+    }
+
+    #MissionValuesSection
+    {
+        height: auto;
+
+    }
+    #AboutUs2Header
+    {
+        justify-content: center;
+        height: auto;
+        font-size: 1.3rem;
+        margin-left: 0%;
+
+    }
+
+    #AboutUsHeaderSec {
+        display: grid; 
+        height: auto;
+    }
+
+    #AboutUsTextSection
+    {
+        width: 100%; height: auto;
+    }
+
+    #AboutUsPhoto2
+    {
+        width: 100%; height: 269px;
+    }
+
+    .a{
+        order: 2;
+    }
+    
+    .b{
+        order: 1;
+    }
+
+    #CERTIFICATIONSSection2
+    {   
+        padding: 1%;
+        height: auto;
+    }
+}

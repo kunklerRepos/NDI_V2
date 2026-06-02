@@ -1,0 +1,236 @@
+#ServicesSectionHeader
+{
+    width: 100%; height: 500px; display: grid; justify-content: center;	align-items: center;
+	background-image:  linear-gradient(rgba(15, 23, 32, .8), rgba(40, 58, 77, .5)), url('../assets/SERVICES_HERO.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top;
+}
+
+#servicesHeaderText
+{
+    display: flex; align-items: center; justify-content: center; margin-top: -65%;
+}
+#ServicesOverviewSection
+{
+    width: 100%; height: 199px; background-image: url('../assets/BACKGROUND_ServicesOverview.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
+}
+
+#servicesOverviewText
+{
+    font-family: Roboto; color: black; width: 50%; justify-self: center;
+}
+
+
+#ProductDevTestingSec
+{
+    width: 100%; height: 462px; 
+				background-image: url('../assets/BACKGROUND_ProdDevTesting.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
+}
+
+#ProdDevTestHeader
+{
+    color: black; font-family: 'Industry Inc'; font-weight: 400; margin-top: 2%
+}
+
+#ProdDevTestText
+{
+    color: black; font-family: Roboto; width: 50%; justify-self: center;
+}
+
+#EngDesignSect
+{
+    display: flex; width: 100%; height: 441px;
+}
+
+#EngDesText
+{
+    width: 50%; height: 100%; background-color:#0F1720;
+}
+
+#EngDesignPhotos
+{
+    width: 50%; height: 100%;
+    background-image: url('../assets/EngineeringSection.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;
+}
+
+#EngDesHeader
+{
+    font-family: Roboto; color: white; display: grid; justify-content: center; margin-top: 5%;
+}
+
+#ProductManufacturingSection
+{
+    width: 100%; height: 330px; background-image: url('../assets/BACKGROUND_ProductionManufacturing.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
+}
+
+#ProductManufacturingText, #ProductManufacturingText2
+{
+   color: white; font-family: Roboto; width: 50%; justify-self: center;
+}
+
+
+#qualityPics
+{
+    width: 100%; height: 445px; display: flex;
+}
+
+#qualityImage
+{
+    width: 50%; height: 100%; background-image: url('../assets/QualitySection.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;
+}
+
+#qualityTextSection
+{
+    width: 50%; height: 100%; background-color: #0F1720;
+}
+
+.qualityTextSectionClass
+{
+    color: white; font-family: Roboto; width: 80%; justify-self: center;
+}
+
+#qualityTextSection1, #qualityTextSection2
+{
+    display: flex; align-items: center; justify-content: center;
+}
+
+#RepairServicesText
+{
+    color: black; font-family: Roboto; width: 50%; justify-self: center;
+}
+#RepairServicesSect
+{
+    width: 100%; height: 372px; background-image: url('../assets/BACKGROUND_Repair.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
+}
+
+#GetInTouchSection2
+{
+    width: 100%; height: 257px; 
+	background-image: url('../assets/BACKGROUND_GetInTouch2.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
+}
+@media screen and (max-width: 600px) {
+    #GetInTouchSection2
+    {
+        height: auto;
+        background-image: url('../assets/BACKGROUND_GetInTouch_mobile.png');
+    }
+    #RepairServicesSect
+    {
+        height: auto;
+    }
+    #RepairServicesText
+    {
+        width: 100%;
+        padding: 5%;
+        text-align: center;
+    }
+    #qualityTextSection1
+    {
+        height: 25%;
+
+    }
+
+    #qualityTextSection2
+    {
+        height: 50%;
+    }
+    .qualityTextSectionClass
+    {
+        width: 100%;
+        padding: 5%;
+    }
+    #qualityTextSection
+    {
+        width: 100%; height: auto; position: relative;
+    }
+
+   #qualityImage
+   {
+        width: 100%;
+        height: 269px;
+        position: relative;
+
+   }
+    #qualityPics
+    {
+        width: 100%; height: auto; display: grid;
+    }
+
+
+    #ProductManufacturingText, #ProductManufacturingText2
+    {
+        width: 100%;
+        padding: 5%;
+    }
+    #ProductManufacturingSection
+    {
+        height: auto;
+    }
+
+    #EngDesHeader
+    {
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #EngDesignPhotos
+    {
+        width: 100%; height: 296px; position: relative;
+    }
+    #EngDesignSect
+    {
+        position: relative;
+        height: auto;
+        display: grid;
+    }
+    #EngDesText
+    {
+        width: 100%; height: auto; padding: 5%;
+    }
+
+    .testingCards
+    {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4%;
+    }
+    #ProdDevTestText
+    {
+        width: 100%; 
+        padding: 5%; 
+        text-align: center;
+    }
+    #ProdDevTestHeader
+   {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-top: 4%;
+   }
+
+    #ProductDevTestingSec
+    {
+        height: auto;
+        background-image: url('../assets/BACKGROUND_ProdDevTesting_mobile.png');
+    }
+    #ServicesOverviewSection
+    {
+        height: auto;
+        background-image: url('../assets/BACKGROUND_ProductsSummary_mobile.png');
+
+    }
+    #servicesOverviewText
+    {
+        width: 100%;
+        padding: 5%;
+    }
+
+    #ServicesSectionHeader
+    {
+        height: 350px;
+    }
+
+    #servicesHeaderText
+    {
+        padding: 5%;
+    }
+
+}

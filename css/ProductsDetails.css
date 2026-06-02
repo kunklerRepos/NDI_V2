@@ -1,0 +1,106 @@
+#ProductsDetailsHeaderSection
+{
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+}
+
+#ProductsDetailsHeaderSectionText
+{
+    display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 1%;
+}
+
+#ProductsDetailsMain
+{
+    display: flex; width: 100%; height: 100%;
+}
+
+#ProductImageMain
+{
+    width: 50%; height: 75vh; 
+    background-size: contain; background-repeat: no-repeat; background-position: right; margin-right: 1%;
+}
+#ProductDetailsOverviewSection
+{
+    width: 50%; height: 100%; display: grid;
+}
+
+#ProductDetailsOverviewSectionHeader
+{
+    color: white; font-family: 'Industrial Inc'; font-size: 36px; font-weight: 400;
+}
+
+#subtextProductDetails
+{
+    color: white; font-family: 'Roboto'; font-size: 16px; font-weight: 500;
+}
+
+#ProductDetailsMaintText
+{
+    margin-top: 3%; color: white; font-family: 'Industrial Inc'; font-size: 36px; font-weight: 400;
+}
+
+#ProductDetailsMaintDesc
+{
+    color: white; font-family: 'Roboto'; font-size: 16px; font-weight: 500;
+}
+
+#ProductDetailHeaderStuff
+{
+    color: white; font-family: 'Industrial Inc'; font-size: 48px; font-weight: 400; margin-top: 3%;
+}
+@media screen and (max-width: 600px)
+{
+    #ProductDetailHeaderStuff
+    {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    #ProductDetailsMaintDesc
+    {
+        padding: 5%;
+    }
+    #ProductDetailsMaintText
+    {
+        font-weight: bold;
+        font-size: 1.5rem;
+        justify-content: center;
+        display: grid;
+    }
+
+    #subtextProductDetails
+    {
+        padding: 5%;
+    }
+
+    #ProductDetailsOverviewSectionHeader
+    {
+        display: grid;
+        justify-content: center;
+        margin-top: 3%;
+    }
+
+    #ProductDetailsOverviewSection
+    {
+        width: 100%;
+    }
+
+    #ProductImageMain
+    {
+        width: 100%;
+        height: 370px;
+        background-position: center;
+        margin-right: 0%;
+    }
+
+    #ProductsDetailsMain
+    {
+        display: grid;
+    }
+
+    #ProductsDetailsHeaderSectionText
+    {
+        display: grid;
+        text-align: center;
+
+    }
+}
