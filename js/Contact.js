@@ -2,22 +2,22 @@ function ContactPage()
 {
     const contactSection = document.getElementById("root");
 
-    contactSection.innerHTML = `<div id="GetInTouchSection" style="width: 100%; height: 1402px; background-image: linear-gradient(#26374A, #17222F)">
+    contactSection.innerHTML = `<div id="GetInTouchSection3">
 					<div style="display: flex; justify-content: center; align-items:center;">
 						<h2 style="font-family: Roboto; color: white; display: grid; justify-content: center; margin-top: 3%;">
 							GET IN TOUCH
 						</h2>	
 					</div>
 					<div style="display: flex; justify-content: center; align-items:center;">
-						<p style="font-family: Roboto; color: white; display: grid; justify-content: center; width: 50%; justify-self: center;">
+						<p id="HaveAQuestionText">
 							Have a question or need more information about our capabilities? Our team is here to help. Whether you’re requesting a quote, technical details, or documentation, reach out and we’ll get back to you promptly.
 						</p>
 
 					</div>
-					<div id="contactSection" style="display: flex; justify-self: center; width: 80%; height: 406px; border-bottom: 1px dashed white">
-						<div style="width: 50%; height: 100%;">
-							<div style="display: flex; width: 100%;">
-								<div class="card" style="width: 323px; height: 173px;">
+					<div id="contactSection">
+						<div id="contactSection2" >
+							<div id="contactSection2Flex1">
+								<div class="card OtherCardDetails">
 									<div class="card-body">
 										<div style="display: flex; justify-content: center; align-items: center; ">
 											<div style="border-radius: 5%; width: 64px; height: 64px;
@@ -30,7 +30,7 @@ function ContactPage()
 										</p>
 									</div>
 								</div>
-								<div class="card" style="width: 216px; height: 173px; margin-left: 3%;">
+								<div class="card smallCardDetails">
 									<div class="card-body">
 										<div style="display: flex; justify-content: center; align-items: center; ">
 											<div  style="border-radius: 5%; width: 64px; height: 64px;
@@ -44,8 +44,8 @@ function ContactPage()
 									</div>
 								</div>
 							</div>
-							<div style="display: flex; width: 100%; margin-top: 3%;">
-								<div class="card" style="width: 323px; height: 173px;">
+							<div id="contactsection2flex2">
+								<div class="card OtherCardDetails">
 									<div class="card-body">
 										<div style="display: flex; justify-content: center; align-items: center; ">
 											<div style="border-radius: 5%; width: 64px; height: 64px;
@@ -58,7 +58,7 @@ function ContactPage()
 										</p>
 									</div>
 								</div>
-								<div class="card" style="width: 216px; height: 173px; margin-left: 3%;">
+								<div class="card smallCardDetails" >
 									<div class="card-body">
 										<div style="display: flex; justify-content: center; align-items: center; ">
 											<div style="border-radius: 5%; width: 64px; height: 64px;
@@ -74,8 +74,8 @@ function ContactPage()
 								
 							</div>
 						</div>
-						<div style="width: 50%; height: 100%;">
-							<div style="height: 370px; width: 568px; border: 1px solid white; border-radius: 5px; padding: 5%;">
+						<div id="contactFormSection" >
+							<div id="contactForm">
 									
 									<div class="mb-3">
 										<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
@@ -105,20 +105,20 @@ function ContactPage()
 							</h2>
 						</div>
 							<div style="display: flex; justify-content: center; align-items: center;">
-								<p style="color: white; font-family: Roboto; width: 80%; justify-self: center; margin-top: -15%; padding: 2%;">
+								<p id="manualTextDescription">
 									NDI provides maintenance and overhaul manuals to support the proper servicing for continued airworthiness of our components. These documents include detailed procedures, specifications, and guidelines required for inspection, repair, and maintenance. To request access to these manuals, please fill out the requested information and select which maintenance and overhaul manuals you would like.
 								</p>
 							</div>
 							
 					</div>
-					<div id="contactSection" style="width: 80%; display: grid; justify-self: center; margin-top: -12%;">
-								<div style="display: flex; justify-content: center; align-items: center; margin-top: 3%;">
-									<input type="text" class="form-control" id="exampleFormControlInput1" style="margin-right: 5%;" placeholder="Full Name">
+					<div id="contactManualsSection" >
+								<div id="manualsContacts1">
+									<input type="text" class="form-control formManualInput" id="exampleFormControlInput1" style="margin-right: 5%;" placeholder="Full Name">
 									
 									<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Job Title">
 								</div>
-								<div style="display: flex; justify-content: center; align-items: center; margin-top: 3%;">
-									<input type="text" class="form-control" id="exampleFormControlInput1" style="margin-right: 5%;" placeholder="Company Name">
+								<div id="manualsContacts2">
+									<input type="text" class="form-control formManualInput" id="exampleFormControlInput1" style="margin-right: 5%;" placeholder="Company Name">
 									
 									<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
 								</div>

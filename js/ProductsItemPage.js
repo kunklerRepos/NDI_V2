@@ -93,35 +93,34 @@ function ReturnProductsItemPage(key, index) {
 
 
     productsItemPage.innerHTML = `<div id="ProductsItemPage" style="width: 100%; height: 100%; background-image: linear-gradient(#2A3D52, #101821);">
-        <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
-            <h1 style="color: white; font-family: 'Industrial Inc'; font-size: 48px; font-weight: 400; margin-top: 3%;">${key}</h1>
+        <div id="ProductsDetailsHeaderSection" >
+            <h1 id="ProductDetailHeaderStuff" style="">${key}</h1>
             </div>
-            <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 1%;">
+            <div id="ProductsDetailsHeaderSectionText">
                 <p style="color: white; font-family: 'Roboto'; font-size: 20px;" >
                 <b >${DataObj[key].BoldText} </b> ${DataObj[key].headerText} </p>
             </div>
 
 
-            <div style="display: flex; width: 100%; height: 100%;">
-                <div style="width: 50%; height: 75vh; 
+            <div id="ProductsDetailsMain" >
+                <div id="ProductImageMain" style="
                     background-image: url('${DataObj[key].actuatorPhoto}'); 
-                    background-size: contain; background-repeat: no-repeat; background-position: right; margin-right: 1%;">
+                    ">
                     
                 </div>
                     
                 
-                <div style="width: 50%; height: 100%; 
-                    display: grid;">
-                    <h1 style="color: white; font-family: 'Industrial Inc'; font-size: 36px; font-weight: 400;">OVERVIEW</h1>
-                    <p style="color: white; font-family: 'Roboto'; font-size: 16px; font-weight: 500;">${DataObj[key].subText}</p>
+                <div id="ProductDetailsOverviewSection">
+                    <h1 id="ProductDetailsOverviewSectionHeader" >OVERVIEW</h1>
+                    <p id="subtextProductDetails">${DataObj[key].subText}</p>
                     <ul style="color: white; font-family: 'Roboto'; font-size: 16px; font-weight: 500; list-style-type: disc; margin-left: 20px;">
                     ${DataObj[key].features.map(feature => `<li>${feature}</li>`).join("")}
                     </ul>
                     <ul style="color: white; font-family: 'Roboto'; font-size: 16px; font-weight: 500; list-style-type: disc; margin-left: 40px;">
                     ${DataObj[key].buildingBlockOptions.map(option => `<li>${option}</li>`).join("")}
                     </ul>    
-                    <h1 style=" margin-top: 3%; color: white; font-family: 'Industrial Inc'; font-size: 36px; font-weight: 400;">Maintenance & Overhaul Manuals</h1>
-                    <p style="color: white; font-family: 'Roboto'; font-size: 16px; font-weight: 500;">
+                    <h1 id="ProductDetailsMaintText" >Maintenance & Overhaul Manuals</h1>
+                    <p id="ProductDetailsMaintDesc">
                     Technical manuals and supporting documentation are available upon request. Please contact the NDI team for access to product-specific maintenance and overhaul information, or additional product information.</p>
                     <div style="display: flex; align-items: center; justify-content: center; margin-top: 2%;">
                         <button style="background-color: white; color: black; font-family: 'Roboto'; font-size: 16px; font-weight: 500; border: 2px solid white; padding: 10px 20px; cursor: pointer;">

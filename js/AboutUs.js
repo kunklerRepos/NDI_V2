@@ -2,16 +2,15 @@ function AboutUsSection()
 {
     const aboutUsSection = document.getElementById("root");
     aboutUsSection.innerHTML = `
-    <div id="AboutUsHeaderSec" style="width: 100%; height: 450px; display: flex;">
-				<div id="AboutUsText2" style="width: 50%; height: 450px; background-color: #0F1720;">
-					<div id="AboutUs2Header" 
-					style="display: flex; align-items: center; justify-content: start; height: 25%; margin-left: 10%;">
+    <div id="AboutUsHeaderSec">
+				<div id="AboutUsTextSection" class="a">
+					<div id="AboutUs2Header">
 						<h2 style="color: white; font-family: 'Industry Inc'; font-weight: 400;">
 							ABOUT US
 						</h2>
 
 					</div>
-					<div id="AboutUs2Text" style="display: flex; align-items: center; justify-content: center;">
+					<div id="AboutUs2Text" >
 						<p style="color: white; font-family: Roboto; width: 80%; justify-self: center;">
 							NDI is a precision aerospace manufacturer specializing in the design, development, and production of hydro-mechanical components and control systems. Our work supports critical aircraft functions, including actuation, fluid regulation, and braking systems, where performance and reliability are essential.
 						</p>
@@ -30,19 +29,16 @@ function AboutUsSection()
 						</p>
 					</div>
 				</div>
-				<div id="AboutUsPhoto2" style="width: 50%; height: 100%; 
-				background-image: url('./assets/WhoWeAre.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+				<div id="AboutUsPhoto2" class="b" ></div>
 			</div>
-			<div id="MissionValuesSection" style="width: 100%; height: 558px; 
-			background-image: url('./assets/BACKGROUND_Timeline.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+			<div id="MissionValuesSection" >
 				<div style="display: flex; align-items: center; justify-content: center;">
 					<h2 style="color: black; font-family: Roboto; font-weight: 400;">
 						MISSION AND VALUES
 					</h2>
 				</div>
-				<div style="display: flex; align-items: center; width: 65%; justify-self: center; justify-content: center; border-radius: 5px; 
-				background-color: #3B82F6">
-					<p style="color: white; font-family: Roboto; width: 60%; justify-self: center; padding: 2%;">
+				<div id="MissionValuesBlueBox" style="">
+					<p id="MissionValuesBlueBoxText" style="">
 						Our mission is to deliver high-quality aerospace components that meet or exceed customer expectations through precision manufacturing, reliable performance, and consistent on-time delivery.				
 					</p>
 				</div>
@@ -50,7 +46,7 @@ function AboutUsSection()
 				<div style="display: flex; align-items: center; width: 80%; justify-self: center; justify-content: center; border-radius: 5px; 
 			 	margin-top: 1%;">
 				<div class="row">
-					<div class="col">
+					<div class="col MissionCardCols">
 						<div class="card" style="width: 226px; height: 337px;">
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
@@ -65,7 +61,7 @@ function AboutUsSection()
 							</div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col MissionCardCols">
 						<div class="card" style="width: 226px; height: 337px;">
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
@@ -80,7 +76,7 @@ function AboutUsSection()
 							</div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col MissionCardCols">
 						<div class="card" style="width: 226px; height: 337px;">
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
@@ -95,7 +91,7 @@ function AboutUsSection()
 							</div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col MissionCardCols">
 						<div class="card" style="width: 226px; height: 337px;">
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
@@ -110,7 +106,7 @@ function AboutUsSection()
 							</div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col MissionCardCols">
 						<div class="card" style="width: 226px; height: 337px;">
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
@@ -130,57 +126,54 @@ function AboutUsSection()
 				</div>
 			</div>
 
-			<div id="TIMELINESection" style="width: 100%; height: 500px">
+			<div id="TIMELINESection" style="width: 100%; height: auto">
 				<div style="display: flex; align-items: center; justify-content: center;">
 					<h2 style="color: black; font-family: Roboto; font-weight: 400; margin-top: 1%;">
 						TIMELINE
 					</h2>
 				</div>
-				<div style="display: flex; align-items: center; justify-content: center; justify-self: center; margin-top: 1%;
-					width: 80%; height: 376px; background-image: url('./assets/Timeline_HORIZONTAL_V2.png'); background-size: contain; background-repeat: no-repeat; background-position: center;
-				"></div>
+				<div id="TimelineImage" ></div>
 				
 			</div>
 
-			<div id="CERTIFICATIONSSection2" style="height: 626px; width: 100%; background-color: #2A3D52">
+			<div id="CERTIFICATIONSSection2">
 				<div style="display: flex; align-items: center; justify-content: center;">
-					<h2 style="color: white; font-family: 'Industry Inc'; font-weight: 400; margin-top: 2%;">
 					<h2 style="color: white; font-family: 'Industry Inc'; font-weight: 400; margin-top: 2%;">
 						CERTIFICATIONS
 					</h2>
 				</div>
 				
-				<div id="AS9100DCertSec" style="justify-self: center;margin-top: 1%; width: 65%; height: 215px; background-color: white; display: flex;">
-					<div style="width: 50%; height: 100%; display: flex; align-items: center; justify-content: center;">
-						<div style="width: 497px; height: 144px; background-image: url('./assets/AS9100D-LOGO.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+				<div id="AS9100DCertSec">
+					<div id="AS9100DCertSec2">
+						<div id="AS9100DLogo"></div>
 					</div>
-					<div style="width: 50%; height: 100%;">
-						<p style="color: black; font-family: Roboto; width: 80%; justify-self: center; padding: 2%;">
+					<div id="AS9100DTextSection">
+						<p id="AS9100DText">
 							NDI is certified to AS9100D Certification, a globally recognized standard for quality management systems in the aerospace industry. This certification reflects our commitment to strict process control, risk management, and continuous improvement across all operations. By adhering to AS9100D requirements, we ensure that every product is manufactured with precision, consistency, and full traceability, meeting the high expectations of aerospace applications.
 						</p>
 					</div>
 				</div>
 
-				<div id="FAACertSec" style="justify-self: center; margin-top: 2%; width: 65%; height: 215px; background-color: white; display: flex;">
-					<div style="width: 50%; height: 100%;"></div>
-					<div style="width: 50%; height: 100%;">
-						<p style="color: black; font-family: Roboto; width: 80%; justify-self: center; padding: 2%;">
+				<div id="FAACertSec">
+					<div id="FAALogoSection"></div>
+					<div id="FAATextSection">
+						<p id="FAAText" >
 							As an FAA Certified Repair Station, NDI is authorized to perform specialized repair and maintenance services in compliance with federal aviation regulations. This designation demonstrates our ability to meet rigorous safety, documentation, and operational standards required by the industry. Through this certification, we provide reliable service and support that ensures the continued performance and airworthiness of critical aerospace components.
 						</p>
 					</div>
 				</div>
 
 			</div>
-			<div id="MeetTheTeamSection" style="height: 500px; width: 100%;">
+			<div id="MeetTheTeamSection" style="height: auto; width: 100%;">
 				<div style="display: flex; align-items: center; justify-content: center;">
 					<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400; margin-top: 1%;">
-					<h2 style="color: black; font-family: 'Industry Inc'; font-weight: 400; margin-top: 1%;">
+					<h2 style="color: #4A6FA5; font-family: 'Industry Inc'; font-weight: bold; margin-top: 1%;">
 						MEET THE TEAM
 					</h2>
 				</div>
 				<div style="display: flex; justify-content: center;">
-					<div class="row" style="width: 80%;">
-						<div class="col">
+					<div class="row MeetTheTeamRow" style="width: 80%;">
+						<div class="col MeetTheTeamCard">
 							<div class="card" style="width: 253px; height: 312px; border: none;">
 							<div class="card-body">
 								<div style="display: flex; justify-content: center; align-items: center; ">
@@ -196,7 +189,7 @@ function AboutUsSection()
 						</div>
 
 						</div>
-						<div class="col">
+						<div class="col MeetTheTeamCard">
 							<div class="card" style="width: 253px; height: 312px; border: none;">
 								<div class="card-body">
 									<div style="display: flex; justify-content: center; align-items: center; ">
@@ -212,7 +205,7 @@ function AboutUsSection()
 							</div>
 
 						</div>
-						<div class="col">
+						<div class="col MeetTheTeamCard">
 							<div class="card" style="width: 253px; height: 312px; border: none;">
 								<div class="card-body">
 									<div style="display: flex; justify-content: center; align-items: center; ">
@@ -227,7 +220,7 @@ function AboutUsSection()
 								</div>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col MeetTheTeamCard">
 							<div class="card" style="width: 253px; height: 312px; border: none;">
 								<div class="card-body">
 									<div style="display: flex; justify-content: center; align-items: center; ">

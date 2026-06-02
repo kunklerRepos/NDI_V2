@@ -9,25 +9,24 @@ function Products() {
 				display: grid; justify-content: center; background-image: linear-gradient(rgba(15, 23, 32, .8), rgba(40, 58, 77, .5)), url('./assets/PRODUCTS_HERO.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 					<h1 style="margin-top: 20%; font-family: 'Industry Inc'; color: white; display: grid; justify-content: center;">PRODUCTS</h1>
 					<div style="width: 65%; justify-content: center; justify-self: center; position: relative; top: -36%;">
-						<p style="font-family: Roboto; color: white;">
+						<p style="font-family: Roboto; color: white; text-align: center;">
 							Precision hydro-mechanical components designed for reliability, performance, and compliance in aerospace applications.
 						</p>
 					</div>
 				</div>
-				<div id="ProductsOverviewSect" style="width: 100%; height: 213px; background-image: url('./assets/BACKGROUND_ProductsSummary.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+				<div id="ProductsOverviewSect" >
 					<div style=" display: flex; justify-content: center; align-items: center; padding: 1%;">
-						<h3 style="font-family: 'Industry Inc'; color: black; margin-top: 1%;">PRODUCTS OVERVIEW</h3></div>
+						<h3 style="font-family: 'Industry Inc'; color: black; margin-top: 1%;">PRODUCTS OVERVIEW</h3>
 						</div>
-					<div style="display: flex; justify-content: center; align-items: center; width: 50%; justify-self: center;">
-						<p style="font-family: Roboto; color: black;">
+					<div id="ProductOverviewText">
+						<p style="font-family: Roboto; color: black; text-align: center;">
 						NDI designs and manufactures precision hydro-mechanical components that support critical aerospace systems. From actuation and fluid control to braking components, our products are built for reliability, performance, and compliance with industry standards. This page provides an overview of our core product categories and capabilities.
 					</p></div>
 				</div>
 
-				<div id="OurProductsSection" style="width: 100%; height: 1357px; padding: 1%; background-image: linear-gradient(rgba(42, 61, 82, .5), rgba(16, 24, 33, .5)), url('./assets/BACKGROUND_OurProducts.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
-				display: grid; position: relative; align-items: center; justify-content: center;">
+				<div id="OurProductsSection">
 					<div class="row" >
-						<div class="col">
+						<div class="col productCard">
 							<a style="text-decoration: none;" href="#" id="ACTUATOR_1">
 								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
 									<div class="card-body" style="display: grid;">
@@ -40,7 +39,7 @@ function Products() {
 							</a>
 						</div>
 						
-						<div class="col">
+						<div class="col productCard">
 							<a style="text-decoration: none;" href="#" id="CALIPER ASSEMBLIES_2">
 								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
 									<div class="card-body" style="display: grid;">
@@ -54,7 +53,7 @@ function Products() {
 							</a>
 						</div>
 						
-						<div class="col">
+						<div class="col productCard">
 							<a style="text-decoration: none;" href="#" id="ACCESSORIES_3">
 								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
 									<div class="card-body" style="display: grid;"> 
@@ -70,7 +69,7 @@ function Products() {
 					</div>
 					<div class="row" style="margin-top: 1%;">
 						
-						<div class="col">
+						<div class="col productCard">
 							<a style="text-decoration: none;" href="#" id="ROTOR BRAKE DISKS_4">
 								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
 									<div class="card-body" style="display: grid;">
@@ -84,7 +83,7 @@ function Products() {
 							</a>
 						</div>
 						
-						<div class="col">
+						<div class="col productCard">
 							<a style="text-decoration: none;" href="#" id="DAMPING DEVICES_5">
 								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
 									<div class="card-body" style="display: grid;">
@@ -98,7 +97,7 @@ function Products() {
 							</a>
 						</div>
 						
-						<div class="col">
+						<div class="col productCard">
 							<a style="text-decoration: none;" href="#" id="FLOW RATE CONTROL_6">
 								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
 									<div class="card-body" style="display: grid;">
@@ -114,7 +113,7 @@ function Products() {
 					</div>
 					<div class="row" style="margin-top: 1%;">
 						
-						<div class="col">
+						<div class="col productCard">
 							<a style="text-decoration: none;" href="#" id="FLUIDIC CARTRIDGE VALVES_7">
 								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
 									<div class="card-body" style="display: grid;">
@@ -128,7 +127,7 @@ function Products() {
 							</a>
 						</div>
 						
-						<div class="col">
+						<div class="col productCard">
 							<a style="text-decoration: none;" href="#" id="MASTER CYLINDERS_8">
 								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
 									<div class="card-body" style="display: grid;">
@@ -142,7 +141,7 @@ function Products() {
 							</a>
 						</div>
 						
-						<div class="col">
+						<div class="col productCard">
 							<a style="text-decoration: none;" href="#" id="RELIEF VALVES_9">
 								<div class="card" style="width: 385px; height: 394px; margin-right: 1%; background-color:white;"> 
 									<div class="card-body" style="display: grid;">
@@ -160,12 +159,12 @@ function Products() {
 
 
 				</div>
-				<div id="MaintenanceOverhaulManualSection" style="width: 100%; height: 274px; background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('./assets/BACKGROUND_blueprints.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">	
+				<div id="MaintenanceOverhaulManualSection" >	
 					<div style="display: flex; align-items: center; justify-content: center;">
-						<h3 style="font-family: Roboto; font-weight:400; color: #4A6FA5; margin-top: 4%;">MAINTENANCE & OVERHAUL MANUALS</h3>
+						<h3 id="maintOverhaulHeading" >MAINTENANCE & OVERHAUL MANUALS</h3>
 					</div>
 					<div>
-						<p style="font-family: Roboto; color: black; display: grid; justify-content: center; width: 50%; justify-self: center;">
+						<p id="MaintenanceOverhaulManualText" >
 							NDI provides maintenance and overhaul manuals to support the proper servicing and continued performance of our components. These documents include detailed procedures, specifications, and guidelines required for inspection, repair, and maintenance. To request access to these manuals, please contact our team directly.
 						</p>
 					</div>
