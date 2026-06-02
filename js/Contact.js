@@ -75,25 +75,30 @@ function ContactPage()
 							</div>
 						</div>
 						<div id="contactFormSection" >
-							<div id="contactForm">
+						<section class="formcarry-container">
+						 <form id="contactForm" action="https://formcarry.com/s/CVOTjwYv8iC" method="POST" enctype="multipart/form-data">
+						
 									
-									<div class="mb-3">
-										<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
+									<div class="mb-3 formcarry-block">
+									 
+										<input name="name" type="text" class="form-control" id="fc-generated-1-name" placeholder="Full Name">
 									</div>
 									
-									<div class="mb-3">
-										<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-									</div>
-									<div class="mb-3">
+									<div class="mb-3 formcarry-block">
 									
-										<textarea class="form-control" placeholder="Message" id="exampleFormControlTextarea1" rows="5"></textarea>
+										<input type="email" name="email" class="form-control" id="fc-generated-1-email" placeholder="Email">
 									</div>
-									<div style="display: flex; justify-content: center; align-items: center;">
-									<button style="border-radius: 6px; background-color: #1E3A5F; color: white; width: 94px; height: 44px;">
+									<div class="mb-3 formcarry-block">
+										 
+										<textarea name="message" class="form-control" placeholder="Message" id="fc-generated-1-message" rows="5"></textarea>
+									</div>
+									<div  class="formcarry-block" style="display: flex; justify-content: center; align-items: center;">
+									<button id="submitFormBtn" type="submit" style="border-radius: 6px; background-color: #1E3A5F; color: white; width: 94px; height: 44px;">
 										SEND</button>
 										</div>
 
-							</div>
+							</form>
+							</section>
 
 						</div>
 
@@ -113,14 +118,14 @@ function ContactPage()
 					</div>
 					<div id="contactManualsSection" >
 								<div id="manualsContacts1">
-									<input type="text" class="form-control formManualInput" id="exampleFormControlInput1" style="margin-right: 5%;" placeholder="Full Name">
+									<input type="text" class="form-control formManualInput" id="MaintName" style="margin-right: 5%;" placeholder="Full Name">
 									
-									<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Job Title">
+									<input type="text" class="form-control" id="MaintJobTitle" placeholder="Job Title">
 								</div>
 								<div id="manualsContacts2">
-									<input type="text" class="form-control formManualInput" id="exampleFormControlInput1" style="margin-right: 5%;" placeholder="Company Name">
+									<input type="text" class="form-control formManualInput" id="MaintCompany" style="margin-right: 5%;" placeholder="Company Name">
 									
-									<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+									<input type="email" class="form-control" id="MaintEmail" placeholder="Email">
 								</div>
 
 								<table class="table" style="margin-top: 2%;">
@@ -208,7 +213,7 @@ function ContactPage()
 									<tr>
 											<td></td>
 											<td style="font-family: Roboto; font-size: 20px; color: white; text-align: center;">
-												<input type="checkbox" id="manual5" name="manual5">
+												<input type="checkbox" id="manual6" name="manual5">
 												<label for="manual5">505</label>
 											</td>
 											<td style="font-family: Roboto; font-size: 20px; color: white; text-align: center;">
@@ -222,12 +227,66 @@ function ContactPage()
 									</tbody>
   								</table>
 								<div style="display: flex; justify-content: center; align-items: center;">
-									<button style="border-radius: 6px; background-color: #1E3A5F; color: white; width: 94px; height: 44px;">
+									<button id="MainManualSubmission" style="border-radius: 6px; background-color: #1E3A5F; color: white; width: 94px; height: 44px;">
 										SEND</button>
 										</div>
 							</div>
 				</div>`;
-    return contactSection;
+
+			const MaintManualSubmissionBtn = document.getElementById("MainManualSubmission");
+
+			const manualObj = {
+				"manual1": "206-L4 B0223-OM J",
+				"manual2": "407_2 B0223-OM4 F",
+				"manual3": "429 B0238-OM E",
+				"manual4": "407 B0244-OM C",
+				"manual5": "525 B0247-OM A",
+				"manual6": "505 B0249-OM E"
+
+			}
+
+
+			MaintManualSubmissionBtn.onclick = () => {
+				let maintName = document.getElementById("MaintName");
+				let maintEmail = document.getElementById("MaintEmail");
+				let maintJobTitle = document.getElementById("MaintJobTitle");
+				let maintCompany = document.getElementById("MaintCompany");
+				
+				let formEmailName = document.getElementById("fc-generated-1-email");
+				let formNameInput = document.getElementById("fc-generated-1-name");
+				let formMessageInput = document.getElementById("fc-generated-1-message");
+
+
+				let manualsStringArr = [];
+
+				Object.keys(manualObj).forEach(key => {
+					let checkBox = document.getElementById(key);
+					if(checkBox.checked)
+					{	
+						manualsStringArr.push(manualObj[key]);
+					}
+				})
+
+
+
+				console.log(maintName.value, maintEmail.value, maintJobTitle.value,  maintCompany.value, manualsStringArr);
+
+				formEmailName.value = maintEmail.value;
+				formNameInput.value = maintName.value;
+				formMessageInput.value = `Hello,
+				My name is ${maintName.value} and I work as a ${maintJobTitle.value} for ${maintCompany.value}.
+				I am requesting access to the following manuals: ${manualsStringArr.join(" ")}.
+					
+				Thanks,
+				${maintName.value}`;
+
+				let submitBtn = document.getElementById("submitFormBtn");
+				submitBtn.click();
+			}
+
+
+
+				
 }
 
 export default ContactPage;

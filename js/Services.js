@@ -57,7 +57,7 @@ function ServicesPage()
 						
 					<div class="row">
 						<div class="col testingCards">
-							<div class="card" style="width: 241px; height: 109px; margin-right: 3%; background-color:#4A6FA5;"> 
+							<div class="card" style="width: 241px; height: auto; margin-right: 3%; background-color:#4A6FA5;"> 
 								<div class="card-body" style="display: grid;">
 									
 									<div style="align-items: center; ">
@@ -74,7 +74,7 @@ function ServicesPage()
 						</div>
 						
 						<div class="col testingCards">
-							<div class="card" style="width: 241px; height: 109px; margin-right: 3%; background-color:#4A6FA5;"> 
+							<div class="card" style="width: 241px; height: auto; margin-right: 3%; background-color:#4A6FA5;"> 
 								<div class="card-body" style="display: grid;">
 									
 									<div style="align-items: center; ">
@@ -91,7 +91,7 @@ function ServicesPage()
 						</div>
 						
 						<div class="col testingCards">
-							<div class="card" style="width: 241px; height: 109px; margin-right: 3%; background-color:#4A6FA5;"> 
+							<div class="card" style="width: 241px; height: auto; margin-right: 3%; background-color:#4A6FA5;"> 
 								<div class="card-body" style="display: grid;">
 									
 									<div style="align-items: center; ">
@@ -110,7 +110,7 @@ function ServicesPage()
 					<div class="row" style="margin-top: 2%;">
 						
 						<div class="col testingCards">
-							<div class="card" style="width: 241px; height: 109px; margin-right: 3%; background-color:#4A6FA5;"> 
+							<div class="card" style="width: 241px; height: auto; margin-right: 3%; background-color:#4A6FA5;"> 
 								<div class="card-body" style="display: grid;">
 									
 									<div style="align-items: center; ">
@@ -127,7 +127,7 @@ function ServicesPage()
 						</div>
 						
 						<div class="col testingCards">
-							<div class="card" style="width: 241px; height: 109px; margin-right: 3%; background-color:#4A6FA5;"> 
+							<div class="card" style="width: 241px; height: auto; margin-right: 3%; background-color:#4A6FA5;"> 
 								<div class="card-body" style="display: grid;">
 									
 									<div style="align-items: center; ">
@@ -144,7 +144,7 @@ function ServicesPage()
 						</div>
 						
 						<div class="col testingCards">
-							<div class="card" style="width: 241px; height: 109px; margin-right: 3%; background-color:#4A6FA5;"> 
+							<div class="card" style="width: 241px; height: auto; margin-right: 3%; background-color:#4A6FA5;"> 
 								<div class="card-body" style="display: grid;">
 									
 									<div style="align-items: center; ">

@@ -1,5 +1,6 @@
 import cleanUp from "./CleanUp.js";
 import Products from "./Products.js";
+import ContactPage from "./Contact.js";
 
 const IndexDict = {1: "ACTUATOR", 5: "DAMPING DEVICES", 
     2: "CALIPER ASSEMBLIES", 4: "ROTOR BRAKE DISKS", 
@@ -123,7 +124,7 @@ function ReturnProductsItemPage(key, index) {
                     <p id="ProductDetailsMaintDesc">
                     Technical manuals and supporting documentation are available upon request. Please contact the NDI team for access to product-specific maintenance and overhaul information, or additional product information.</p>
                     <div style="display: flex; align-items: center; justify-content: center; margin-top: 2%;">
-                        <button style="background-color: white; color: black; font-family: 'Roboto'; font-size: 16px; font-weight: 500; border: 2px solid white; padding: 10px 20px; cursor: pointer;">
+                        <button id="ProductDetailsContactBtn" style="background-color: white; color: black; font-family: 'Roboto'; font-size: 16px; font-weight: 500; border: 2px solid white; padding: 10px 20px; cursor: pointer;">
                         CONTACT</button>
                     </div>
                 </div>
@@ -136,6 +137,13 @@ function ReturnProductsItemPage(key, index) {
             </div>
     </div>`;
 
+    const contactsBtn = document.getElementById("ProductDetailsContactBtn");
+
+    contactsBtn.onclick = () => {
+        cleanUp("root");
+        ContactPage();
+    }
+ 
     document.getElementById("BackToProductsAnchor").addEventListener("click", () => {
         cleanUp("root");
         Products();
