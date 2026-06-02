@@ -60,7 +60,7 @@
     width: 323px; height: 173px; margin-bottom: 3%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     #contactManualsSection
     {
         width: 100%;

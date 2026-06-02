@@ -40,8 +40,15 @@ width: 100%; height: 1357px; padding: 1%; background-image: linear-gradient(rgba
     font-family: Roboto; color: #182330; margin-top: 5%; margin-left: 10%;
 }
 
+@media screen and (max-width: 1227px)
+{
+    #OurProductsSection
+    {
+        height: auto;
+    }
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
 
     #testminonalSectionText2
     {

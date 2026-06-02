@@ -328,7 +328,7 @@ color: #FFFFFF;
     width: 100%; height: 257px; background-image: url('../assets/BACKGROUND_GetInTouch.png'); background-size: cover; background-position: center;
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 1024px)
 {
     #GetInTouchSection
     {
@@ -460,6 +460,10 @@ color: #FFFFFF;
         margin-top: 10% !important;
     }
 
+}
+
+@media screen and (max-width: 986px) {
+    
 }
 
 @media screen and (max-width: 450px)

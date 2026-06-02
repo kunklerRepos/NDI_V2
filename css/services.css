@@ -106,7 +106,7 @@
     width: 100%; height: 257px; 
 	background-image: url('../assets/BACKGROUND_GetInTouch2.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     #GetInTouchSection2
     {
         height: auto;
