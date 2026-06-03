@@ -436,15 +436,20 @@ color: #FFFFFF;
     .MainHeaderFont
     {
         width: 350px;
-        font-size: 25px;
+        font-size: 1.3rem;
         text-align: left;
         line-height: 25px;
+        left: 0%;
+        display: grid; 
+        justify-content: center;
+        justify-self: center;
 
     }
     .subHeadingFont
     {
         font-size: 17px;
         width: 350px;
+        left: 0%;
     }
     #WhatWeDoMenuSection
     {

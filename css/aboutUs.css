@@ -78,7 +78,7 @@
 }
 #FAALogo
 {
-    width: 33%; height: 203px; background-image: url('../assets/Seal_of_the_United_States_Federal_Aviation_Administration.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
+    width: 33%; height: 203px; background-image: url('../assets/Seal_of_the_United_States_Federal_Aviation_Administration.png'); background-size: contain; background-repeat: no-repeat; background-position: center;
 }
 #AS9100DTextSection
 {
@@ -112,6 +112,30 @@
     margin-top: 7%;
 }
 
+@media screen and (max-width: 600px)
+{
+      #AS9100DCertSec
+    {
+        display: grid;
+        width: 90%;
+        height: auto;
+    }
+
+     #FAACertSec
+    {
+        display: grid;
+        width: 90%;
+        height: auto;
+    }
+    
+    #FAALogo
+    {
+        width: 36%;
+        height: 120px;
+    }
+} 
+
+
 @media screen and (min-width: 750px)
 {
     
@@ -133,6 +157,7 @@
     {
         width: 36%;
         height: 123px;
+        margin-top: 5%;
     }
 }
 
